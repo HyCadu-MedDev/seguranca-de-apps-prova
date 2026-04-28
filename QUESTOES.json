@@ -1,0 +1,1309 @@
+[
+  {
+    "numero_questao": "1",
+    "enunciado": "O crescimento da tecnologia exige cada vez mais um pensamento computacional voltado para a resolução de problemas, já que a tecnologia também envolve algumas ameaças, como o roubo de dados confidenciais. O conhecimento sobre a segurança da informação é fundamental para proteger as organizações. Escolha a alternativa correta a respeito de segurança da informação:",
+    "instrucao": "Selecione a resposta:",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "Os recursos são tidos como os ativos de maior valor de uma organização; por isso, é indispensável que sejam protegidos de ameaças.",
+        "correta": false,
+        "comentario_da_resposta": "A capacidade de pensamento computacional é fundamental diante do avanço da tecnologia. A tecnologia também apresenta alguns riscos, como invasão e roubo de dados confidenciais, sendo necessário ter um sólido conhecimento sobre segurança da informação. Proteger os ativos de uma organização é algo fundamental, então, ter uma segurança da informação bem estruturada é um ganho crucial para a sobrevivência dessa empresa. Os ativos de tecnologia da informação das empresas envolvem dispositivos de computação, infraestrutura, aplicações, serviços e seus dados, sejam eles em transmissão ou armazenados. As informações são os ativos de maior valor de qualquer organização, portanto, exigem proteção contra uma grande diversidade de ameaças, acidentais ou deliberadas, necessitando de diferentes controles de segurança. A segurança da informação envolve a proteção de informações, sistemas, recursos e demais ativos contra desastres, erros (intencionais ou não) e manipulação não autorizada, tendo como objetivo a redução da probabilidade e do impacto de incidentes de segurança. Todos esses controles necessitam ser estabelecidos, implementados, monitorados, analisados criticamente e melhorados para que assegurem que os objetivos de negócio e a segurança da informação da organização sejam atendidos."
+      },
+      {
+        "letra": "B",
+        "texto": "A segurança da informação reúne diversos procedimentos que têm por objetivo proteger as organizações de ameaças exclusivamente digitais.",
+        "correta": false,
+        "comentario_da_resposta": "A capacidade de pensamento computacional é fundamental diante do avanço da tecnologia. A tecnologia também apresenta alguns riscos, como invasão e roubo de dados confidenciais, sendo necessário ter um sólido conhecimento sobre segurança da informação. Proteger os ativos de uma organização é algo fundamental, então, ter uma segurança da informação bem estruturada é um ganho crucial para a sobrevivência dessa empresa. Os ativos de tecnologia da informação das empresas envolvem dispositivos de computação, infraestrutura, aplicações, serviços e seus dados, sejam eles em transmissão ou armazenados. As informações são os ativos de maior valor de qualquer organização, portanto, exigem proteção contra uma grande diversidade de ameaças, acidentais ou deliberadas, necessitando de diferentes controles de segurança. A segurança da informação envolve a proteção de informações, sistemas, recursos e demais ativos contra desastres, erros (intencionais ou não) e manipulação não autorizada, tendo como objetivo a redução da probabilidade e do impacto de incidentes de segurança. Todos esses controles necessitam ser estabelecidos, implementados, monitorados, analisados criticamente e melhorados para que assegurem que os objetivos de negócio e a segurança da informação da organização sejam atendidos."
+      },
+      {
+        "letra": "C",
+        "texto": "A segurança da informação envolve um conjunto de ações que visam a proteger as organizações especialmente de ameaças externas.",
+        "correta": false,
+        "comentario_da_resposta": "A capacidade de pensamento computacional é fundamental diante do avanço da tecnologia. A tecnologia também apresenta alguns riscos, como invasão e roubo de dados confidenciais, sendo necessário ter um sólido conhecimento sobre segurança da informação. Proteger os ativos de uma organização é algo fundamental, então, ter uma segurança da informação bem estruturada é um ganho crucial para a sobrevivência dessa empresa. Os ativos de tecnologia da informação das empresas envolvem dispositivos de computação, infraestrutura, aplicações, serviços e seus dados, sejam eles em transmissão ou armazenados. As informações são os ativos de maior valor de qualquer organização, portanto, exigem proteção contra uma grande diversidade de ameaças, acidentais ou deliberadas, necessitando de diferentes controles de segurança. A segurança da informação envolve a proteção de informações, sistemas, recursos e demais ativos contra desastres, erros (intencionais ou não) e manipulação não autorizada, tendo como objetivo a redução da probabilidade e do impacto de incidentes de segurança. Todos esses controles necessitam ser estabelecidos, implementados, monitorados, analisados criticamente e melhorados para que assegurem que os objetivos de negócio e a segurança da informação da organização sejam atendidos."
+      },
+      {
+        "letra": "D",
+        "texto": "Os controles de segurança da informação precisam ser definidos, formalizados, controlados, observados e aperfeiçoados sempre.",
+        "correta": true,
+        "mensagem_acerto": "Você acertou!",
+        "comentario_da_resposta": "A capacidade de pensamento computacional é fundamental diante do avanço da tecnologia. A tecnologia também apresenta alguns riscos, como invasão e roubo de dados confidenciais, sendo necessário ter um sólido conhecimento sobre segurança da informação. Proteger os ativos de uma organização é algo fundamental, então, ter uma segurança da informação bem estruturada é um ganho crucial para a sobrevivência dessa empresa. Os ativos de tecnologia da informação das empresas envolvem dispositivos de computação, infraestrutura, aplicações, serviços e seus dados, sejam eles em transmissão ou armazenados. As informações são os ativos de maior valor de qualquer organização, portanto, exigem proteção contra uma grande diversidade de ameaças, acidentais ou deliberadas, necessitando de diferentes controles de segurança. A segurança da informação envolve a proteção de informações, sistemas, recursos e demais ativos contra desastres, erros (intencionais ou não) e manipulação não autorizada, tendo como objetivo a redução da probabilidade e do impacto de incidentes de segurança. Todos esses controles necessitam ser estabelecidos, implementados, monitorados, analisados criticamente e melhorados para que assegurem que os objetivos de negócio e a segurança da informação da organização sejam atendidos."
+      },
+      {
+        "letra": "E",
+        "texto": "Por ser o ativo de maior valor de uma organização, a transmissão necessita de uma atenção especial da segurança da informação.",
+        "correta": false,
+        "comentario_da_resposta": "A capacidade de pensamento computacional é fundamental diante do avanço da tecnologia. A tecnologia também apresenta alguns riscos, como invasão e roubo de dados confidenciais, sendo necessário ter um sólido conhecimento sobre segurança da informação. Proteger os ativos de uma organização é algo fundamental, então, ter uma segurança da informação bem estruturada é um ganho crucial para a sobrevivência dessa empresa. Os ativos de tecnologia da informação das empresas envolvem dispositivos de computação, infraestrutura, aplicações, serviços e seus dados, sejam eles em transmissão ou armazenados. As informações são os ativos de maior valor de qualquer organização, portanto, exigem proteção contra uma grande diversidade de ameaças, acidentais ou deliberadas, necessitando de diferentes controles de segurança. A segurança da informação envolve a proteção de informações, sistemas, recursos e demais ativos contra desastres, erros (intencionais ou não) e manipulação não autorizada, tendo como objetivo a redução da probabilidade e do impacto de incidentes de segurança. Todos esses controles necessitam ser estabelecidos, implementados, monitorados, analisados criticamente e melhorados para que assegurem que os objetivos de negócio e a segurança da informação da organização sejam atendidos."
+      }
+    ]
+  },
+  {
+    "numero_questao": "2",
+    "enunciado": "A segurança da informação tem a função de proteger a informação e os sistemas de informação de possíveis ataques às organizações, tendo como pilares a confidencialidade, a integridade e a disponibilidade. Sobre a disponibilidade, pode-se afirmar:\n\nI. A criptografia e a autenticação são algumas das formas que são usadas para garantir a disponibilidade.\nII. A disponibilidade está condicionada também a um sistema eficaz, bem como ao funcionamento da rede.\nIII. É fundamental que existam planos de recuperação frente aos possíveis desastres, para manter a disponibilidade.\nIV. Tem como objetivo assegurar o estado original dos dados, para que sejam assim disponibilizados.\nV. Os métodos para a manutenção da disponibilidade dependem diretamente da confiabilidade.\n\nSão verdadeiras:",
+    "instrucao": "Selecione a resposta:",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "I, III e IV.",
+        "correta": false
+      },
+      {
+        "letra": "B",
+        "texto": "II, IV e V.",
+        "correta": false
+      },
+      {
+        "letra": "C",
+        "texto": "II e III.",
+        "correta": true,
+        "mensagem_acerto": "Você acertou!"
+      },
+      {
+        "letra": "D",
+        "texto": "I e V.",
+        "correta": false
+      },
+      {
+        "letra": "E",
+        "texto": "II e IV.",
+        "correta": false
+      }
+    ]
+  },
+  {
+    "numero_questao": "3",
+    "enunciado": "A segurança da informação não era alvo de muita preocupação, até surgirem as redes. A utilização da internet inseriu muitas vulnerabilidades de segurança, pois ela pode ser portadora de atacantes, dentre outras vulnerabilidades. Junto com o crescimento da internet, o número de ameaças à segurança também aumentou. Entre essas ameaças, há os ataques direcionados. Sobre esse tipo de ataques, considere as afirmações a seguir e classifique-as em verdadeiras (V) ou falsas (F).\n\n( ) O ataque direcionado não segue uma linha específica, pois ele é direcionado às informações em geral das organizações.\n( ) São ataques que não tem constância, já que os invasores não permanecem ativos após a abordagem inicial.\n( ) Uma das principais ameaças virtuais e exemplo de ataque direcionado é o business email compromise.\n( ) O possível invasor estuda muito bem as organizações que pretende atacar e identifica um profissional de alta função.\n( ) Os invasores fazem de tudo para que, mesmo após o ataque inicial, o ataque continue sendo efetuado.\n\nAssinale a alternativa que contenha a sequência correta:",
+    "instrucao": "Selecione a resposta:",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "F - F - V - V - V.",
+        "correta": true,
+        "mensagem_acerto": "Você acertou!"
+      },
+      {
+        "letra": "B",
+        "texto": "V - F - F - V - V.",
+        "correta": false
+      },
+      {
+        "letra": "C",
+        "texto": "F - V - V - F - V.",
+        "correta": false
+      },
+      {
+        "letra": "D",
+        "texto": "F - F - V - V - F.",
+        "correta": false
+      },
+      {
+        "letra": "E",
+        "texto": "V - V - F - F - F.",
+        "correta": false
+      }
+    ]
+  },
+  {
+    "numero_questao": "4",
+    "enunciado": "Entre as possíveis ameaças que fazem parte das ações dos cibercriminosos, que usam computadores como instrumentos para cometer atos ilegais, há as ameaças persistentes avançadas (APT, do inglês advanced persistent threats). A respeito desse tipo de ameaça, pode-se afirmar que:\n\nI. É uma técnica de ataque continuado em que o atacante procura o acesso a um sistema e então permanece nele durante um tempo.\nII. O governo e as grandes organizações costumam ser os principais alvos desse tipo de ameaças, que usam técnicas como malwares.\nIII. O acesso contínuo efetuado a partir da ameaça persistente avançada ocorre por meio de quatro etapas bem direcionadas pelo atacante.\n\nSão verdadeiras:",
+    "instrucao": "Selecione a resposta:",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "II e III.",
+        "correta": false
+      },
+      {
+        "letra": "B",
+        "texto": "I e II.",
+        "correta": true,
+        "mensagem_acerto": "Você acertou!"
+      },
+      {
+        "letra": "C",
+        "texto": "I e III.",
+        "correta": false
+      },
+      {
+        "letra": "D",
+        "texto": "III.",
+        "correta": false
+      },
+      {
+        "letra": "E",
+        "texto": "I.",
+        "correta": false
+      }
+    ]
+  },
+  {
+    "numero_questao": "5",
+    "enunciado": "Com as diversas ameaças que estão presentes na rotina dos dispositivos que se encontram conectados a uma rede, é fundamental que as organizações tenham um gerenciamento de segurança eficiente, que possa proteger os acessos às redes, bem como os dados armazenados e transmitidos por meio delas. A respeito do gerenciamento de segurança, escolha a alternativa correta:",
+    "instrucao": "Selecione a resposta:",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "Como uma das técnicas usadas no gerenciamento de segurança, há a autenticação, que atualmente, devido ao avanço das ameaças, já não diminui os riscos de ataques, mesmo quando é exitosa.",
+        "correta": false
+      },
+      {
+        "letra": "B",
+        "texto": "Uma das formas mais seguras do gerenciamento de segurança, quando se trata da técnica de autenticação, é a autenticação em duas etapas de verificação, como o uso do token.",
+        "correta": true,
+        "mensagem_acerto": "Você acertou!"
+      },
+      {
+        "letra": "C",
+        "texto": "Para um bom gerenciamento de segurança, é importante que, dentro de uma organização, os colaboradores possuam acesso às informações dos demais setores dessa organização, mesmo que não atuem neles.",
+        "correta": false
+      },
+      {
+        "letra": "D",
+        "texto": "As diferentes técnicas que são utilizadas para um gerenciamento de segurança eficiente incluem o token e o smartcard, que são senhas individuais fornecidas para os usuários.",
+        "correta": false
+      },
+      {
+        "letra": "E",
+        "texto": "No processo de gerenciamento de segurança em que é utilizada a autenticação dos usuários para evitar possíveis ameaças, o acesso se dá de forma simplificada, apenas pela senha do usuário.",
+        "correta": false
+      }
+    ]
+  },
+  {
+    "numero_questao": "1",
+    "enunciado": "A ISO 27001 é dividida em 11 seções, sendo elas:",
+    "instrucao": "Selecione a resposta:",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "introdução, escopo, referência normativa, termos e definições, contexto da organização, liderança, planejamento, apoio, operação, avaliação do desempenho, melhoria e anexo B.",
+        "correta": false
+      },
+      {
+        "letra": "B",
+        "texto": "introdução, referência normativa, termos e definições, contexto da organização, liderança, planejamento, apoio, operação, avaliação do desempenho, melhoria, anexo e anexo A.",
+        "correta": false
+      },
+      {
+        "letra": "C",
+        "texto": "introdução, escopo, referência bibliográfica, termos e definições, contexto da organização, liderança, planejamento, apoio, operação, avaliação do desempenho, melhoria e anexo A.",
+        "correta": false
+      },
+      {
+        "letra": "D",
+        "texto": "introdução, escopo, referência normativa, termos e definições, contexto da organização, líder, planejamento, apoio, operação, avaliação do desempenho, melhoria e anexo A.",
+        "correta": false
+      },
+      {
+        "letra": "E",
+        "texto": "introdução, escopo, referência normativa, termos e definições, contexto da organização, liderança, planejamento, apoio, operação, avaliação do desempenho, melhoria e anexo A.",
+        "correta": true,
+        "mensagem_acerto": "Você acertou!"
+      }
+    ]
+  },
+  {
+    "numero_questao": "2",
+    "enunciado": "Assinale a alternativa que melhor descreve o objetivo da ISO 27001.",
+    "instrucao": "Selecione a resposta:",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "Disponibilizar um conjunto de requisitos, processos e controles à segurança da informação, diminuindo os seus riscos.",
+        "correta": true,
+        "mensagem_acerto": "Você acertou!"
+      },
+      {
+        "letra": "B",
+        "texto": "Compartilhar um conjunto de requisitos, processos e controles à segurança da informação, diminuindo os seus riscos.",
+        "correta": false
+      },
+      {
+        "letra": "C",
+        "texto": "Disponibilizar um conjunto objetos, processos e controles à segurança da informação, diminuindo os seus riscos.",
+        "correta": false
+      },
+      {
+        "letra": "D",
+        "texto": "Disponibilizar um conjunto de requisitos, processos verificando os seus riscos.",
+        "correta": false
+      },
+      {
+        "letra": "E",
+        "texto": "Disponibilizar um conjunto de requisitos, processos e falta de controles à segurança da informação.",
+        "correta": false
+      }
+    ]
+  },
+  {
+    "numero_questao": "3",
+    "enunciado": "A norma 27001 é internacional e publicada pela:",
+    "instrucao": "Selecione a resposta:",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "International Start Organization (ISO).",
+        "correta": false
+      },
+      {
+        "letra": "B",
+        "texto": "International Standardization Organization (ISO).",
+        "correta": true,
+        "mensagem_acerto": "Você acertou!"
+      },
+      {
+        "letra": "C",
+        "texto": "International Save Organization (ISO).",
+        "correta": false
+      },
+      {
+        "letra": "D",
+        "texto": "Internal Start Organization (ISO).",
+        "correta": false
+      },
+      {
+        "letra": "E",
+        "texto": "Internal Security Organization (ISO).",
+        "correta": false
+      }
+    ]
+  },
+  {
+    "numero_questao": "4",
+    "enunciado": "Assinale a alternativa que apresenta um dos benefícios da ISO 27001 para as organizações.",
+    "instrucao": "Selecione a resposta:",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "Obtenção de vantagem de Marketing: existem cada vez mais leis, regulamentações e requisitos contratuais relacionados à segurança da informação, e a metologia da ISO 27001 está em conformidade com todos esses requisitos.",
+        "correta": false
+      },
+      {
+        "letra": "B",
+        "texto": "Conformidade com requisitos legais: o principal objetivo da ISO 27001 é prevenir incidentes de segurança. Ao prevenir incidentes, a empresa economizará o valor significativo.",
+        "correta": false
+      },
+      {
+        "letra": "C",
+        "texto": "Melhor organização: se sua organização obtém a certificação, e seus competidores não, ela terá vantagem sobre eles na visão de clientes sensíveis à questão de segurança das informações.",
+        "correta": false
+      },
+      {
+        "letra": "D",
+        "texto": "Redução de custos: se sua organização obtém a certificação, e seus competidores não, ela terá vantagem sobre eles na visão de clientes sensíveis à questão de segurança das informações.",
+        "correta": false
+      },
+      {
+        "letra": "E",
+        "texto": "Conformidade com requisitos legais: há cada vez mais leis, regulamentações e requisitos contratuais relacionados à segurança da informação, e a metologia da ISO 27001 está em conformidade com todos esses requisitos.",
+        "correta": true,
+        "mensagem_acerto": "Você acertou!"
+      }
+    ]
+  },
+  {
+    "numero_questao": "5",
+    "enunciado": "A certificação para ISO 27001 pode ser retirada de duas formas. Quais são elas?",
+    "instrucao": "Selecione a resposta:",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "Certificação individual e certificação para organizações.",
+        "correta": true,
+        "mensagem_acerto": "Você acertou!"
+      },
+      {
+        "letra": "B",
+        "texto": "Certificação própria e certificação para organizações.",
+        "correta": false
+      },
+      {
+        "letra": "C",
+        "texto": "Certificação para gestores e certificação para empregados.",
+        "correta": false
+      },
+      {
+        "letra": "D",
+        "texto": "Certificação para estudantes e certificação para TI.",
+        "correta": false
+      },
+      {
+        "letra": "E",
+        "texto": "Certificação individual e certificação para gestores.",
+        "correta": false
+      }
+    ]
+  },
+  {
+    "numero_questao": "1",
+    "enunciado": "Existem alguns tipos de vulnerabilidade de inclusão de script no servidor. É possível citar:",
+    "instrucao": "Selecione a resposta:",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "Inclusão de arquivo remoto (RFI) — tem se tornado menos comum, pois a maioria das instalações PHP não permite, por padrão, que o servidor execute um código hospedado em um servidor separado.\n\nInclusão de arquivo local (LFI) — faz o servidor executar um código injetado que, de outro modo, não seria executado (normalmente para um propósito malicioso).",
+        "correta": true,
+        "mensagem_acerto": "Você acertou!"
+      },
+      {
+        "letra": "B",
+        "texto": "Inclusão de arquivo remoto (RFI) — tem se tornado mais comum, pois a minoria das instalações PHP não permite, por padrão, que o servidor execute um código hospedado em um servidor separado.\n\nInclusão de arquivo local (LFI) — faz o servidor executar um código injetado que, de mesmo modo, seria executado (normalmente para um propósito não malicioso).",
+        "correta": false
+      },
+      {
+        "letra": "C",
+        "texto": "Inclusão de arquivo remoto (RFI) — tem se tornado menos comum, pois a maioria das instalações PHP permite, por padrão, que o servidor execute um código hospedado em um servidor separado.\n\nInclusão de arquivo local (LFI) — faz o servidor executar um código injetado que, de outro modo, seria executado (normalmente para um propósito não malicioso).",
+        "correta": false
+      },
+      {
+        "letra": "D",
+        "texto": "Inclusão de arquivo remoto (RFI) — tem se tornado mais comum, pois a maioria das instalações PHP permite, por padrão, que o servidor execute um código hospedado em um servidor separado.\n\nInclusão de arquivo local (LFI) — faz o servidor executar um código injetado que, de outro modo, não seria executado (normalmente para um propósito malicioso).",
+        "correta": false
+      },
+      {
+        "letra": "E",
+        "texto": "Inclusão de arquivo remoto (RFI) — tem se tornado mais comum, pois a maioria das instalações PHP permite, por padrão, que o servidor não execute um código hospedado em um servidor separado.\n\nInclusão de arquivo local (LFI) — faz o servidor executar um código injetado que, de outro modo, seria executado (normalmente para um propósito não malicioso).",
+        "correta": false
+      }
+    ]
+  },
+  {
+    "numero_questao": "2",
+    "enunciado": "A maioria dos ataques de negação de serviço não pode ser executada a partir de uma única máquina. Qual tipo de negação de serviço podemos identificar a partir dessa afirmação?",
+    "instrucao": "Selecione a resposta:",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "Negação de serviço distribuída, utilizando mais de uma máquina atacante.",
+        "correta": true,
+        "mensagem_acerto": "Você acertou!"
+      },
+      {
+        "letra": "B",
+        "texto": "Ataque otimista ACK TCP, utilizando mais de uma máquina atacante.",
+        "correta": false
+      },
+      {
+        "letra": "C",
+        "texto": "SYN.",
+        "correta": false
+      },
+      {
+        "letra": "D",
+        "texto": "Fraggle.",
+        "correta": false
+      },
+      {
+        "letra": "E",
+        "texto": "Smurf, utilizando mais de uma máquina atacante.",
+        "correta": false
+      }
+    ]
+  },
+  {
+    "numero_questao": "3",
+    "enunciado": "Sobre sequestro de sessão, pode-se citar algumas técnicas utilizadas. Em relação a essas técnicas, assinale a alternativa correta.",
+    "instrucao": "Selecione a resposta:",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "Brute - Forçando um ID: O invasor nunca teve o conhecimento do intervalo de IDs.",
+        "correta": false
+      },
+      {
+        "letra": "B",
+        "texto": "Roubando um ID:um invasor irá roubar um ID utilizando sniffing ou outros meios.",
+        "correta": true,
+        "mensagem_acerto": "Você acertou!"
+      },
+      {
+        "letra": "C",
+        "texto": "Cálculo de ID: o invasor tentará adivinhar um ID. Geralmente, ele conhece o intervalo de IDs.",
+        "correta": false
+      },
+      {
+        "letra": "D",
+        "texto": "Brute - Forçando um ID: roubo de ID utilizando o cálculo de um ID de sessão válido.",
+        "correta": false
+      },
+      {
+        "letra": "E",
+        "texto": "Roubando um ID: o invasor rouba um ID utilizando cross-site scripting ou malware.",
+        "correta": false
+      }
+    ]
+  },
+  {
+    "numero_questao": "4",
+    "enunciado": "O nome Cavalo de Tróia surgiu em alusão ao conto grego, pelo fato desse vírus vir escondido dentro de outro programa, como se fosse inofensivo. O que o Cavalo de Tróia faz em um computador?",
+    "instrucao": "Selecione a resposta:",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "Oferece, ao hacker, acesso ao computador vitimado, passando diversos tipos de informações.",
+        "correta": true,
+        "mensagem_acerto": "Você acertou!"
+      },
+      {
+        "letra": "B",
+        "texto": "Técnica utilizada para encontrar fraquezas em um servidor.",
+        "correta": false
+      },
+      {
+        "letra": "C",
+        "texto": "Ataque que tenta adivinhar senhas relacionadas ao usuário, sabendo um pouco sobre ele.",
+        "correta": false
+      },
+      {
+        "letra": "D",
+        "texto": "Ataque que aproveita a vulnerabilidade nas comunicações das vítimas.",
+        "correta": false
+      },
+      {
+        "letra": "E",
+        "texto": "Ataque em que o invasor se passar por outro aparelho ou usuário de uma rede.",
+        "correta": false
+      }
+    ]
+  },
+  {
+    "numero_questao": "5",
+    "enunciado": "“É conhecido como uma requisição forjada de sites. Explora a confiança de uma página com um usuário específico. Neste ataque, um site malicioso faz com que o usuário execute, sem saber, comandos em um terceiro site, que ele confia”. Em relação a essa afirmação, assinale a alternativa correta.",
+    "instrucao": "Selecione a resposta:",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "Ataques a clientes, cross-site request forgery.",
+        "correta": true,
+        "mensagem_acerto": "Você acertou!"
+      },
+      {
+        "letra": "B",
+        "texto": "Ataques a servidores, cross-site request forgery.",
+        "correta": false
+      },
+      {
+        "letra": "C",
+        "texto": "Ataques a clientes, cross-site scripting.",
+        "correta": false
+      },
+      {
+        "letra": "D",
+        "texto": "Ataques a servidores, cross-site scripting.",
+        "correta": false
+      },
+      {
+        "letra": "E",
+        "texto": "Ataques a clientes, sequestro de clique.",
+        "correta": false
+      }
+    ]
+  },
+  {
+    "numero_questao": "1",
+    "enunciado": "Vulnerabilidades são encontradas diariamente nos mais diversos sistemas e softwares, tanto privados quantto globais. Toda vulnerabilidade descoberta deve ser corrigida?",
+    "instrucao": "Selecione a resposta:",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "Sim. Sempre é importante corrigir todas as falhas detectadas.",
+        "correta": false
+      },
+      {
+        "letra": "B",
+        "texto": "Sim, desde que validados os riscos e os custos de correção.",
+        "correta": true,
+        "mensagem_acerto": "Você acertou!"
+      },
+      {
+        "letra": "C",
+        "texto": "Sempre que solicitado pelo usuário do sistema ou pelo gerente de projetos.",
+        "correta": false
+      },
+      {
+        "letra": "D",
+        "texto": "Nunca para a versão atual; somente em virtude de novas versões, que já saiam de fábrica com a vulnerabilidade corrigida.",
+        "correta": false
+      },
+      {
+        "letra": "E",
+        "texto": "Sim, levando em conta somente os custos envolvidos na atividade de conserto do sistema.",
+        "correta": false
+      }
+    ]
+  },
+  {
+    "numero_questao": "2",
+    "enunciado": "O cross-site scripting é bem perigoso e consegue realizar um grande estrago para usuários dos sistemas. Ele também é conhecido por qual sigla?",
+    "instrucao": "Selecione a resposta:",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "CXS.",
+        "correta": false
+      },
+      {
+        "letra": "B",
+        "texto": "CSS.",
+        "correta": false
+      },
+      {
+        "letra": "C",
+        "texto": "XSS.",
+        "correta": true,
+        "mensagem_acerto": "Você acertou!"
+      },
+      {
+        "letra": "D",
+        "texto": "ZZS.",
+        "correta": false
+      },
+      {
+        "letra": "E",
+        "texto": "Nenhuma das alternativa está correta.",
+        "correta": false
+      }
+    ]
+  },
+  {
+    "numero_questao": "3",
+    "enunciado": "Qual a importância da validação de dados?",
+    "instrucao": "Selecione a resposta:",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "Garantir que os dados a serem gravados ou usados pelo sistema estejam corretos e sem valores inválidos ou que possam ser interpretados como código-fonte.",
+        "correta": true,
+        "mensagem_acerto": "Você acertou!"
+      },
+      {
+        "letra": "B",
+        "texto": "Ter a certeza de que a acentuação é corretamente empregada.",
+        "correta": false
+      },
+      {
+        "letra": "C",
+        "texto": "Validar se o endereço informado é realmente do cliente informante.",
+        "correta": false
+      },
+      {
+        "letra": "D",
+        "texto": "Trabalhar com nomes sem abreviações no sistema.",
+        "correta": false
+      },
+      {
+        "letra": "E",
+        "texto": "Não tem importância a validação dos dados em um primeiro momento, somente depois que o sistema estiver em produção.",
+        "correta": false
+      }
+    ]
+  },
+  {
+    "numero_questao": "4",
+    "enunciado": "Qual a é ferramenta do tipo protocol analyser mais conhecida ?",
+    "instrucao": "Selecione a resposta:",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "Nmap.",
+        "correta": false
+      },
+      {
+        "letra": "B",
+        "texto": "Whois.",
+        "correta": false
+      },
+      {
+        "letra": "C",
+        "texto": "Ping.",
+        "correta": false
+      },
+      {
+        "letra": "D",
+        "texto": "Tcpdump.",
+        "correta": true,
+        "mensagem_acerto": "Você acertou!"
+      },
+      {
+        "letra": "E",
+        "texto": "Telnet.",
+        "correta": false
+      }
+    ]
+  },
+  {
+    "numero_questao": "5",
+    "enunciado": "Uma boa forma de realizar ações contra vulnerabilidades são os honeypots. O que são eles?",
+    "instrucao": "Selecione a resposta:",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "Iscas para invasores não atacarem o sistema real.",
+        "correta": true,
+        "mensagem_acerto": "Você acertou!"
+      },
+      {
+        "letra": "B",
+        "texto": "Vulnerabilidade do sistema.",
+        "correta": false
+      },
+      {
+        "letra": "C",
+        "texto": "Sistema sem vulnerabilidade.",
+        "correta": false
+      },
+      {
+        "letra": "D",
+        "texto": "Invasão não sucedida.",
+        "correta": false
+      },
+      {
+        "letra": "E",
+        "texto": "Invasão bem-sucedida.",
+        "correta": false
+      }
+    ]
+  },
+  {
+    "numero_questao": "1",
+    "enunciado": "Uma das formas de segurança trata da proteção dos recursos em relação ao acesso de pessoas indevidas, seja de uma aplicação como um todo, seja de parte do serviço.\n\nDadas as seguintes afirmações sobre os requisitos de segurança:\n\n( ) Particularidade é o requisito que diz respeito aos dados que são de uma parte em particular.\n( ) Confidencialidade garante que a troca de informação esteja protegida de bisbilhoteiros.\n( ) Integridade garante que a mensagem não será modificada e que chegou íntegra ao destinatário.\n( ) Autorização é o processo que decide quando uma entidade com determinada identidade pode acessar um recurso específico.\n( ) Isolamento é requisito que separa parte dos requisitos para proteger esses dados de acessos indevidos.\n\nMarque a opção a seguir que representa a resposta correta sobre as afirmações.",
+    "instrucao": "Selecione a resposta:",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "V - V - V - F - F.",
+        "correta": false
+      },
+      {
+        "letra": "B",
+        "texto": "V - F - V - F - V.",
+        "correta": false
+      },
+      {
+        "letra": "C",
+        "texto": "F - V - F - V - F.",
+        "correta": false
+      },
+      {
+        "letra": "D",
+        "texto": "F - V - V - V - F.",
+        "correta": true
+      },
+      {
+        "letra": "E",
+        "texto": "F - V - V - F - F.",
+        "correta": false
+      }
+    ]
+  },
+  {
+    "numero_questao": "2",
+    "enunciado": "O Kerberos é um protocolo de autenticação para ambientes abertos e distribuídos em que os usuários acessam serviços disponibilizados de forma segura por servidores distribuídos pela rede.\n\nMarque a opção que contém um servidor centralizado responsável pela autenticação dos usuários como componente.",
+    "instrucao": "Selecione a resposta:",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "Key Distribution Server.",
+        "correta": false
+      },
+      {
+        "letra": "B",
+        "texto": "Key Distribution Ticket.",
+        "correta": false
+      },
+      {
+        "letra": "C",
+        "texto": "Key Distribution Center.",
+        "correta": true
+      },
+      {
+        "letra": "D",
+        "texto": "Ticket Granting Ticket.",
+        "correta": false
+      },
+      {
+        "letra": "E",
+        "texto": "Ticket Granting Server.",
+        "correta": false
+      }
+    ]
+  },
+  {
+    "numero_questao": "3",
+    "enunciado": "A tecnologia de criptografia fornece uma base para a proteção de mensagens trocadas pela Internet e os dados armazenados nas bases de dados.\n\nMarque a opção que representa uma das duas categorias de criptografia que exige a utilização de uma única chave para criptografar e descriptografar uma mensagem.",
+    "instrucao": "Selecione a resposta:",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "Criptografia regular.",
+        "correta": false
+      },
+      {
+        "letra": "B",
+        "texto": "Criptografia proporcional.",
+        "correta": false
+      },
+      {
+        "letra": "C",
+        "texto": "Criptografia assimétrica.",
+        "correta": false
+      },
+      {
+        "letra": "D",
+        "texto": "Criptografia equivalente.",
+        "correta": false
+      },
+      {
+        "letra": "E",
+        "texto": "Criptografia simétrica.",
+        "correta": true
+      }
+    ]
+  },
+  {
+    "numero_questao": "4",
+    "enunciado": "Os webservices apresentam diversos riscos que devem ser mitigados pelos desenvolvedores e profissionais de segurança.\n\nMarque a opção que representa o ataque que compromete o acesso ao serviço por meio da sobrecarga da aplicação por solicitações com grandes volumes de dados ou excesso de solicitações, causando indisponibilidade do serviço.",
+    "instrucao": "Selecione a resposta:",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "Ataque de negação de serviço.",
+        "correta": true
+      },
+      {
+        "letra": "B",
+        "texto": "Injeção de código SQL.",
+        "correta": false
+      },
+      {
+        "letra": "C",
+        "texto": "Ataque de bisbilhoteiros.",
+        "correta": false
+      },
+      {
+        "letra": "D",
+        "texto": "Sequestro de sessão.",
+        "correta": false
+      },
+      {
+        "letra": "E",
+        "texto": "Tratamento inadequado de erros.",
+        "correta": false
+      }
+    ]
+  },
+  {
+    "numero_questao": "5",
+    "enunciado": "O WS-Security, WSS, é uma expansão do SOAP para adicionar segurança em webservices que deve ser utilizada junto com outros protocolos específicos.\n\nMarque a opção que representa o protocolo que possibilita a criação de uma camada de criptografia para a comunicação segura entre os computadores de origem e destino.",
+    "instrucao": "Selecione a resposta:",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "SAML.",
+        "correta": false
+      },
+      {
+        "letra": "B",
+        "texto": "SSL.",
+        "correta": true
+      },
+      {
+        "letra": "C",
+        "texto": "XACML.",
+        "correta": false
+      },
+      {
+        "letra": "D",
+        "texto": "XML.",
+        "correta": false
+      },
+      {
+        "letra": "E",
+        "texto": "HTTP.",
+        "correta": false
+      }
+    ]
+  },
+  {
+    "numero_questao": "1",
+    "enunciado": "São exemplos de falhas na segurança de um sistema:",
+    "instrucao": "Selecione a resposta:",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "a) Protocolos Seguros e Engenharia Social.",
+        "correta": false
+      },
+      {
+        "letra": "B",
+        "texto": "b) Protocolos inseguros, senhas fáceis e bugs.",
+        "correta": true
+      },
+      {
+        "letra": "C",
+        "texto": "c) Senhas complexas, firewall e força bruta.",
+        "correta": false
+      },
+      {
+        "letra": "D",
+        "texto": "d) Autenticidade e integridade.",
+        "correta": false
+      },
+      {
+        "letra": "E",
+        "texto": "e) Bugs, política e procedimentos.",
+        "correta": false
+      }
+    ]
+  },
+  {
+    "numero_questao": "2",
+    "enunciado": "São atributos de segurança:",
+    "instrucao": "Selecione a resposta:",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "a) Vírus, keylogger e engenharia social.",
+        "correta": false
+      },
+      {
+        "letra": "B",
+        "texto": "b) Cultura, mecanismos e firewall.",
+        "correta": false
+      },
+      {
+        "letra": "C",
+        "texto": "c) Autenticidade, integridade, confidencialidade e disponibilidade.",
+        "correta": true
+      },
+      {
+        "letra": "D",
+        "texto": "d) Senhas, criptografia e hardware.",
+        "correta": false
+      },
+      {
+        "letra": "E",
+        "texto": "e) Antivírus, firewall e servidor.",
+        "correta": false
+      }
+    ]
+  },
+  {
+    "numero_questao": "3",
+    "enunciado": "São componentes essenciais para a manutenção da segurança de um sistema:",
+    "instrucao": "Selecione a resposta:",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "a) Troca de senhas, firewall e criptografia.",
+        "correta": false
+      },
+      {
+        "letra": "B",
+        "texto": "b) Protocolos inseguros, senhas fáceis e bugs.",
+        "correta": false
+      },
+      {
+        "letra": "C",
+        "texto": "c) Integridade, autenticidade e disponibilidade.",
+        "correta": false
+      },
+      {
+        "letra": "D",
+        "texto": "d) Cultura, mecanismos e política de segurança.",
+        "correta": true
+      },
+      {
+        "letra": "E",
+        "texto": "e) Bugs, política e procedimentos.",
+        "correta": false
+      }
+    ]
+  },
+  {
+    "numero_questao": "4",
+    "enunciado": "O que é PSI?",
+    "instrucao": "Selecione a resposta:",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "a) Política de Segurança da Informação - Procedimentos, regras de uso, requisitos e punições.",
+        "correta": true
+      },
+      {
+        "letra": "B",
+        "texto": "b) Política de Serviços de Internet - Procedimentos para uma navegação segura.",
+        "correta": false
+      },
+      {
+        "letra": "C",
+        "texto": "c) Procedimentos de Segurança Integrada - Regras para integração da segurança de sistemas.",
+        "correta": false
+      },
+      {
+        "letra": "D",
+        "texto": "d) Privacidade e Segurança Individual - Protocolos que definem o princípio da individualidade do usuário.",
+        "correta": false
+      },
+      {
+        "letra": "E",
+        "texto": "e) Punições de Sistemas Integrados - Políticas de punição para invasores de sistemas Web.",
+        "correta": false
+      }
+    ]
+  },
+  {
+    "numero_questao": "5",
+    "enunciado": "São exemplos de ameaças à segurança:",
+    "instrucao": "Selecione a resposta:",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "a) Bugs, política e procedimentos.",
+        "correta": false
+      },
+      {
+        "letra": "B",
+        "texto": "b) Integridade, autenticidade e disponibilidade.",
+        "correta": false
+      },
+      {
+        "letra": "C",
+        "texto": "c) PSI, MSI e GSI.",
+        "correta": false
+      },
+      {
+        "letra": "D",
+        "texto": "d) Antivírus, firewall e servidor.",
+        "correta": false
+      },
+      {
+        "letra": "E",
+        "texto": "e) Keylogger, força bruta e negação de serviço.",
+        "correta": true
+      }
+    ]
+  },
+  {
+    "numero_questao": "1",
+    "enunciado": "Qual a função da criptografia?",
+    "instrucao": "Selecione a resposta:",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "a) Desembaralhar os dados.",
+        "correta": false
+      },
+      {
+        "letra": "B",
+        "texto": "b) Embaralhar os dados para proteger a segurança das informações.",
+        "correta": true
+      },
+      {
+        "letra": "C",
+        "texto": "c) Impedir que os dados sejam apagados do banco de dados.",
+        "correta": false
+      },
+      {
+        "letra": "D",
+        "texto": "d) Monitorar a ação de usuários invasores.",
+        "correta": false
+      },
+      {
+        "letra": "E",
+        "texto": "e) Bloquear ações maliciosas dentro de uma aplicação.",
+        "correta": false
+      }
+    ]
+  },
+  {
+    "numero_questao": "2",
+    "enunciado": "São tipos de criptografia:",
+    "instrucao": "Selecione a resposta:",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "a) De chave pública e de chave particular.",
+        "correta": false
+      },
+      {
+        "letra": "B",
+        "texto": "b) De chave direta e de chave indireta.",
+        "correta": false
+      },
+      {
+        "letra": "C",
+        "texto": "c) De chave singular e de chave múltipla.",
+        "correta": false
+      },
+      {
+        "letra": "D",
+        "texto": "d) De chave simétrica e de chave assimétrica.",
+        "correta": true
+      },
+      {
+        "letra": "E",
+        "texto": "e) De chave livre e de chave proprietária.",
+        "correta": false
+      }
+    ]
+  },
+  {
+    "numero_questao": "3",
+    "enunciado": "O que é uma chave privada?",
+    "instrucao": "Selecione a resposta:",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "a) Chave utilizada para cifrar os dados.",
+        "correta": false
+      },
+      {
+        "letra": "B",
+        "texto": "b) Chave utilizada para decifrar os dados cifrados por outra chave privada.",
+        "correta": false
+      },
+      {
+        "letra": "C",
+        "texto": "c) Chave utilizada para se conectar ao banco de dados.",
+        "correta": false
+      },
+      {
+        "letra": "D",
+        "texto": "d) Chave utilizada para decifrar os dados cifrados por uma chave pública.",
+        "correta": true
+      },
+      {
+        "letra": "E",
+        "texto": "e) Chave utilizada como senha mestra de uma aplicação.",
+        "correta": false
+      }
+    ]
+  },
+  {
+    "numero_questao": "4",
+    "enunciado": "O que é XSS?",
+    "instrucao": "Selecione a resposta:",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "a) Extense Site Spoof - Técnica usada para escrever dados no banco de dados.",
+        "correta": false
+      },
+      {
+        "letra": "B",
+        "texto": "b) Extensible Site Script - Técnica usada para quebra de senhas.",
+        "correta": false
+      },
+      {
+        "letra": "C",
+        "texto": "c) Cross Start Site - Técnica usada para proteger os campos de formulário.",
+        "correta": false
+      },
+      {
+        "letra": "D",
+        "texto": "d) Extra Strong Site - Proteção adicional para Aplicações Web contra invasões.",
+        "correta": false
+      },
+      {
+        "letra": "E",
+        "texto": "e) Cross-Site Scripting - Técnica usada para inserir scripts maliciosos na aplicação.",
+        "correta": true
+      }
+    ]
+  },
+  {
+    "numero_questao": "5",
+    "enunciado": "Qual a função dos logs?",
+    "instrucao": "Selecione a resposta:",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "a) Habilitar os comentários em um blog ou aplicação.",
+        "correta": false
+      },
+      {
+        "letra": "B",
+        "texto": "b) Guardar todas as senhas de acesso ao site ou aplicação.",
+        "correta": false
+      },
+      {
+        "letra": "C",
+        "texto": "c) Manter um registro das atividades do site ou aplicação e os horários de acesso.",
+        "correta": true
+      },
+      {
+        "letra": "D",
+        "texto": "d) Guardar todos os nomes de usuário que têm acesso à aplicação.",
+        "correta": false
+      },
+      {
+        "letra": "E",
+        "texto": "e) Manter as informações ativas dentro de uma sessão.",
+        "correta": false
+      }
+    ]
+  },
+  {
+    "numero_questao": "1",
+    "enunciado": "As ameaças de segurança a banco de dados são relacionadas a três objetivos de segurança mais gerais.\n\nAssinale a alternativa em que um desses objetivos de segurança é descrito de forma correta.",
+    "instrucao": "Selecione a resposta:",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "Acessibilidade: controlar o acesso a bancos de dados específicos.",
+        "correta": false
+      },
+      {
+        "letra": "B",
+        "texto": "Sigilo: possibilitar a atualização dos dados por usuários externos.",
+        "correta": false
+      },
+      {
+        "letra": "C",
+        "texto": "Confidencialidade: proteger a informação de modificações indevidas.",
+        "correta": false
+      },
+      {
+        "letra": "D",
+        "texto": "Disponibilidade: permitir acesso aos dados a usuários autorizados.",
+        "correta": true
+      },
+      {
+        "letra": "E",
+        "texto": "Integridade: permitir acesso aos dados a usuários autorizados.",
+        "correta": false
+      }
+    ]
+  },
+  {
+    "numero_questao": "2",
+    "enunciado": "A proteção dos bancos de dados contra ameaças é garantida por quatro tipos de medidas de controle específicas.\n\nAssinale a alternativa na qual uma dessas medidas é descrita de forma correta.",
+    "instrucao": "Selecione a resposta:",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "Controle de acesso: proteção de dados ao transmiti-los por rede de comunicação.",
+        "correta": false
+      },
+      {
+        "letra": "B",
+        "texto": "Controle de ingerência: criação de contas de usuários para moderar a entrada no SGBD.",
+        "correta": false
+      },
+      {
+        "letra": "C",
+        "texto": "Controle de fluxo: controle do deslocamento de informações a usuários não autorizados.",
+        "correta": true
+      },
+      {
+        "letra": "D",
+        "texto": "Criptografia: interpretação de resumos de dados sobre um grupo de atributos de uma tabela.",
+        "correta": false
+      },
+      {
+        "letra": "E",
+        "texto": "Controle de gerência: controle do acesso a informações de indicadores estatísticos.",
+        "correta": false
+      }
+    ]
+  },
+  {
+    "numero_questao": "3",
+    "enunciado": "O administrador de banco de dados é o principal responsável pela administração e pelo gerenciamento de um sistema de banco de dados. Entre suas responsabilidades está a criação de conta e a concessão e revogação de privilégios. Assim, observe a expressão a seguir:\n\nGRANT SELECT, UPDATE (NOTA), INSERT, DELETE ON ALUNOS TO PROFESSOR5\n\nWITH GRANT OPTION;\n\nAgora, assinale a alternativa que descreve corretamente a função da expressão acima.",
+    "instrucao": "Selecione a resposta:",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "Concede privilégios que permitem a conta PROFESSOR recuperar, atualizar o atributo nota e excluir tuplas da relação ALUNOS, possibilitando que esses privilégios sejam repassados a outras contas.",
+        "correta": false
+      },
+      {
+        "letra": "B",
+        "texto": "Concede privilégios que permitem a conta PROFESSOR5 recuperar, atualizar o atributo nota e inserir e excluir tuplas da relação ALUNOS, possibilitando que esses privilégios sejam repassados a outras contas.",
+        "correta": true
+      },
+      {
+        "letra": "C",
+        "texto": "Concede privilégios que permitem a conta PROFESSOR5 recuperar, atualizar o atributo notas, inserir e excluir tuplas da relação ALUNO, possibilitando que esses privilégios sejam repassados a outras contas.",
+        "correta": false
+      },
+      {
+        "letra": "D",
+        "texto": "Concede privilégios que permitem a conta PROFESSOR5 recuperar o atributo (nota), atualizar, inserir e excluir tuplas da relação ALUNOS, possibilitando que esses privilégios sejam repassados a outras contas.",
+        "correta": false
+      },
+      {
+        "letra": "E",
+        "texto": "Concede privilégios que permitem a conta PROFESSOR5 recuperar, atualizar nota, inserir nota e excluir nota da relação ALUNOS, possibilitando que esses privilégios sejam repassados a outras contas.",
+        "correta": false
+      }
+    ]
+  },
+  {
+    "numero_questao": "4",
+    "enunciado": "Assim como a concessão, a revogação de privilégios para usuários em um banco de dados é importante para garantir a segurança das informações armazenadas.\n\nSendo assim, assinale a afirmação em que são revogados corretamente os seguintes privilégios da relação CLIENTE da conta usu_teste: o que permite alteração de tabelas, colunas e índices; e o que permite excluir tabelas, visões, triggers ou banco de dados.",
+    "instrucao": "Selecione a resposta:",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "REVOKE ALTER, DROP ON CLIENTE TO USU_TESTE;",
+        "correta": true,
+        "mensagem_acerto": "Você acertou!"
+      },
+      {
+        "letra": "B",
+        "texto": "REVOKE UPDATE, DELETE ON CLIENTE TO USU_TESTE;",
+        "correta": false
+      },
+      {
+        "letra": "C",
+        "texto": "REVOKE USAGE, INDEX ON CLIENTE TO USU_TESTE;",
+        "correta": false
+      },
+      {
+        "letra": "D",
+        "texto": "REVOKE ALTER, DELETE ON CLIENTE TO USU_TESTE;",
+        "correta": false
+      },
+      {
+        "letra": "E",
+        "texto": "REVOKE CREATE, DROP ON CLIENTE TO USU_TESTE;",
+        "correta": false
+      }
+    ]
+  },
+  {
+    "numero_questao": "5",
+    "enunciado": "O modelo de segurança de acesso de autorização baseado em papéis auxilia a conceder os privilégios de acesso relacionados com o trabalho dos usuários, ou o seu papel na organização.\n\nSendo assim, assinale a alternativa que descreve corretamente uma das características da autorização baseada em papéis.",
+    "instrucao": "Selecione a resposta:",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "Os papéis podem ser criados por meio do uso do comando DROP ROLE.",
+        "correta": false
+      },
+      {
+        "letra": "B",
+        "texto": "Pode ser utilizado tanto com os controles de acesso discricionário quanto obrigatório.",
+        "correta": true,
+        "mensagem_acerto": "Você acertou!"
+      },
+      {
+        "letra": "C",
+        "texto": "O controle da inclusão múltipla de papéis pode ser feito por meio da exclusão mútua.",
+        "correta": false
+      },
+      {
+        "letra": "D",
+        "texto": "Cada sessão de usuário pode ter mais que um papel atribuído e mais que um usuário.",
+        "correta": false
+      },
+      {
+        "letra": "E",
+        "texto": "A exclusão múltipla de papéis agrupa tarefas, de modo que um usuário faça o trabalho sozinho.",
+        "correta": false
+      }
+    ]
+  }
+]

@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz - Segurança de Aplicação</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              cyberBlue: "#1E40AF",
+              neonBlue: "#38BDF8",
+              dangerRed: "#DC2626",
+              neonRed: "#F43F5E",
+              baseDark: "#070B1A",
+              panelDark: "#0B1228",
+            },
+            boxShadow: {
+              glowBlue: "0 0 30px rgba(56, 189, 248, 0.35)",
+              glowRed: "0 0 30px rgba(244, 63, 94, 0.28)",
+            },
+            keyframes: {
+              floatPulse: {
+                "0%, 100%": { transform: "translateY(0px)", opacity: "0.85" },
+                "50%": { transform: "translateY(-6px)", opacity: "1" },
+              },
+              fadeInUp: {
+                "0%": { opacity: "0", transform: "translateY(8px)" },
+                "100%": { opacity: "1", transform: "translateY(0)" },
+              },
+            },
+            animation: {
+              floatPulse: "floatPulse 3.2s ease-in-out infinite",
+              fadeInUp: "fadeInUp 0.35s ease-out",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body
+    class="min-h-screen bg-baseDark text-slate-100 antialiased selection:bg-neonBlue/30"
+  >
+    <div
+      class="pointer-events-none fixed inset-0 -z-10 bg-[radial-gradient(circle_at_20%_20%,rgba(56,189,248,0.20),transparent_35%),radial-gradient(circle_at_80%_10%,rgba(244,63,94,0.18),transparent_30%),radial-gradient(circle_at_50%_80%,rgba(30,64,175,0.22),transparent_35%)]"
+    ></div>
+
+    <main class="mx-auto w-full max-w-4xl px-4 py-8 sm:px-6 sm:py-10">
+      <header class="mb-8 text-center">
+        <p
+          class="mb-2 inline-flex animate-floatPulse items-center rounded-full border border-neonBlue/40 bg-cyberBlue/20 px-4 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-neonBlue"
+        >
+          Segurança de Aplicação
+        </p>
+        <h1 class="text-2xl font-bold sm:text-3xl md:text-4xl">
+          Quiz Interativo
+        </h1>
+        <p class="mx-auto mt-2 max-w-2xl text-sm text-slate-300 sm:text-base">
+          Responda as questões e veja feedback imediato com o resultado correto.
+        </p>
+      </header>
+
+      <section
+        class="rounded-2xl border border-neonBlue/20 bg-panelDark/80 p-4 shadow-glowBlue backdrop-blur-sm sm:p-6"
+      >
+        <div id="startState" class="animate-fadeInUp py-12 text-center">
+          <p class="mx-auto mb-4 max-w-xl text-sm text-slate-300 sm:text-base">
+            Prepare-se para responder as questões da prova de Segurança de
+            Aplicação.
+          </p>
+          <div class="mx-auto mb-6 max-w-xl rounded-xl border border-neonBlue/30 bg-slate-900/50 p-4 text-left">
+            <p class="mb-3 text-sm font-semibold text-neonBlue">Modo do Quiz</p>
+            <label class="mb-2 flex cursor-pointer items-center gap-3 rounded-lg border border-slate-700/70 p-3 transition hover:border-neonBlue/50">
+              <input
+                type="radio"
+                name="quizMode"
+                value="shuffle"
+                checked
+                class="h-4 w-4 accent-neonBlue"
+              />
+              <span>
+                <span class="block font-semibold">Embaralhado</span>
+                <span class="text-xs text-slate-400">Questões em ordem aleatória.</span>
+              </span>
+            </label>
+            <label class="flex cursor-pointer items-center gap-3 rounded-lg border border-slate-700/70 p-3 transition hover:border-neonBlue/50">
+              <input
+                type="radio"
+                name="quizMode"
+                value="ava"
+                class="h-4 w-4 accent-neonBlue"
+              />
+              <span>
+                <span class="block font-semibold">Na ordem do AVA</span>
+                <span class="text-xs text-slate-400">Mantém a ordem original do AVA .</span>
+              </span>
+            </label>
+          </div>
+          <button
+            id="startButton"
+            class="rounded-lg bg-gradient-to-r from-cyberBlue to-neonRed px-7 py-3 text-base font-bold text-white transition hover:scale-[1.02] active:scale-95"
+          >
+            Iniciar Quiz
+          </button>
+        </div>
+
+        <div id="loadingState" class="hidden py-14 text-center">
+          <p class="text-slate-300">Carregando questões...</p>
+        </div>
+
+        <div id="errorState" class="hidden py-10 text-center">
+          <p class="font-semibold text-neonRed">Erro ao carregar o quiz.</p>
+          <p class="mt-2 text-sm text-slate-300">
+            Abra este projeto com um servidor local (ex.: Live Server) e tente
+            novamente.
+          </p>
+          <button
+            id="retryButton"
+            class="mt-5 rounded-lg border border-neonBlue/40 bg-slate-900/60 px-5 py-2 font-semibold text-neonBlue transition hover:border-neonRed hover:text-neonRed"
+          >
+            Tentar novamente
+          </button>
+        </div>
+
+        <div id="quizState" class="hidden">
+          <div class="mb-6">
+            <div class="mb-2 flex items-center justify-between text-xs sm:text-sm">
+              <span class="text-slate-300">Progresso</span>
+              <span id="progressText" class="font-semibold text-neonBlue"></span>
+            </div>
+            <div class="h-3 overflow-hidden rounded-full bg-slate-800/90">
+              <div
+                id="progressBar"
+                class="h-full w-0 rounded-full bg-gradient-to-r from-neonBlue to-neonRed transition-all duration-500"
+              ></div>
+            </div>
+          </div>
+
+          <article id="questionCard" class="animate-fadeInUp">
+            <h2 id="questionTitle" class="mb-3 text-lg font-semibold sm:text-xl"></h2>
+            <p id="questionInstruction" class="mb-6 text-sm text-slate-300"></p>
+
+            <div id="answersContainer" class="space-y-3"></div>
+
+            <div
+              id="feedbackBox"
+              class="mt-6 hidden rounded-xl border px-4 py-3 text-sm sm:text-base"
+            ></div>
+
+            <div class="mt-6 flex items-center justify-between gap-3">
+              <button
+                id="prevButton"
+                class="rounded-lg border border-neonBlue/40 bg-slate-900/60 px-5 py-2 font-semibold text-neonBlue transition hover:border-neonRed hover:text-neonRed disabled:cursor-not-allowed disabled:opacity-40"
+              >
+                Questão anterior
+              </button>
+              <button
+                id="nextButton"
+                class="hidden rounded-lg bg-gradient-to-r from-cyberBlue to-neonRed px-5 py-2 font-semibold text-white transition hover:scale-[1.02] active:scale-95"
+              >
+                Próxima questão
+              </button>
+            </div>
+          </article>
+        </div>
+
+        <div id="resultState" class="hidden animate-fadeInUp py-6 text-center">
+          <h2 class="text-2xl font-bold sm:text-3xl">Resultado Final</h2>
+          <p class="mt-2 text-slate-300">Seu desempenho no quiz:</p>
+
+          <div class="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2">
+            <div class="rounded-xl border border-neonBlue/40 bg-cyberBlue/10 p-5">
+              <p class="text-sm uppercase tracking-wider text-neonBlue">Corretas</p>
+              <p id="finalCorrect" class="mt-1 text-3xl font-bold text-neonBlue"></p>
+            </div>
+            <div class="rounded-xl border border-neonRed/40 bg-dangerRed/10 p-5">
+              <p class="text-sm uppercase tracking-wider text-neonRed">Erradas</p>
+              <p id="finalWrong" class="mt-1 text-3xl font-bold text-neonRed"></p>
+            </div>
+          </div>
+
+          <p id="finalRate" class="mt-6 text-lg font-semibold"></p>
+
+          <button
+            id="restartButton"
+            class="mt-6 rounded-lg border border-neonBlue/40 bg-slate-900/60 px-5 py-2 font-semibold text-neonBlue transition hover:border-neonRed hover:text-neonRed"
+          >
+            Refazer quiz
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="pb-6 text-center">
+      <p class="text-xs text-slate-400 sm:text-sm">
+        Desenvolvido por: Cadu Kar Alho
+      </p>
+      <p class="text-xs text-slate-400 sm:text-sm">
+        Centro Infernal Salesiano
+      </p>
+    </footer>
+
+    <script>
+      const state = {
+        sourceQuestions: [],
+        questions: [],
+        index: 0,
+        correct: 0,
+        selected: false,
+        answersByIndex: {},
+        isLoading: false,
+        mode: "shuffle",
+      };
+
+      const elements = {
+        startState: document.getElementById("startState"),
+        startButton: document.getElementById("startButton"),
+        loadingState: document.getElementById("loadingState"),
+        errorState: document.getElementById("errorState"),
+        retryButton: document.getElementById("retryButton"),
+        quizState: document.getElementById("quizState"),
+        resultState: document.getElementById("resultState"),
+        progressBar: document.getElementById("progressBar"),
+        progressText: document.getElementById("progressText"),
+        questionCard: document.getElementById("questionCard"),
+        questionTitle: document.getElementById("questionTitle"),
+        questionInstruction: document.getElementById("questionInstruction"),
+        answersContainer: document.getElementById("answersContainer"),
+        feedbackBox: document.getElementById("feedbackBox"),
+        prevButton: document.getElementById("prevButton"),
+        nextButton: document.getElementById("nextButton"),
+        finalCorrect: document.getElementById("finalCorrect"),
+        finalWrong: document.getElementById("finalWrong"),
+        finalRate: document.getElementById("finalRate"),
+        restartButton: document.getElementById("restartButton"),
+      };
+
+      function shuffleQuestions(items) {
+        const shuffled = [...items];
+        for (let i = shuffled.length - 1; i > 0; i -= 1) {
+          const j = Math.floor(Math.random() * (i + 1));
+          [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+        }
+        return shuffled;
+      }
+
+      function resetAttemptState() {
+        state.index = 0;
+        state.correct = 0;
+        state.selected = false;
+        state.answersByIndex = {};
+      }
+
+      function setupAttemptQuestions() {
+        state.questions =
+          state.mode === "shuffle"
+            ? shuffleQuestions(state.sourceQuestions)
+            : [...state.sourceQuestions];
+      }
+
+      function setProgress() {
+        const total = state.questions.length;
+        const current = state.index + 1;
+        const value = (state.index / total) * 100;
+        elements.progressBar.style.width = `${Math.max(0, value)}%`;
+        elements.progressText.textContent = `${Math.min(current, total)}/${total}`;
+      }
+
+      function beginQuiz() {
+        if (state.isLoading) return;
+        const selectedMode = document.querySelector('input[name="quizMode"]:checked');
+        state.mode = selectedMode ? selectedMode.value : "shuffle";
+
+        elements.startState.classList.add("hidden");
+        elements.errorState.classList.add("hidden");
+        elements.resultState.classList.add("hidden");
+
+        if (state.sourceQuestions.length > 0) {
+          resetAttemptState();
+          setupAttemptQuestions();
+          elements.loadingState.classList.add("hidden");
+          elements.quizState.classList.remove("hidden");
+          renderQuestion();
+          return;
+        }
+
+        elements.quizState.classList.add("hidden");
+        elements.loadingState.classList.remove("hidden");
+        initQuiz();
+      }
+
+      function setNavigationButtons() {
+        elements.prevButton.disabled = state.index === 0;
+        const isLastQuestion = state.index === state.questions.length - 1;
+        elements.nextButton.textContent = isLastQuestion
+          ? "Finalizar quiz"
+          : "Próxima questão";
+      }
+
+      function lockAllAlternatives() {
+        const alternatives = Array.from(elements.answersContainer.children);
+        alternatives.forEach((button) => {
+          button.disabled = true;
+          button.classList.add("opacity-80", "cursor-not-allowed");
+        });
+      }
+
+      function renderAnsweredState(answerRecord) {
+        const question = state.questions[state.index];
+        const alternatives = Array.from(elements.answersContainer.children);
+        const correctAlternative = question.alternativas.find((alt) => alt.correta);
+
+        lockAllAlternatives();
+
+        alternatives.forEach((button) => {
+          const letter = button.dataset.letter;
+          if (letter === answerRecord.selectedLetter && !answerRecord.isCorrect) {
+            button.className =
+              "w-full rounded-xl border border-neonRed bg-dangerRed/20 p-4 text-left ring-2 ring-neonRed/60";
+            button.disabled = true;
+            button.classList.add("opacity-80", "cursor-not-allowed");
+          }
+
+          if (correctAlternative && letter === correctAlternative.letra) {
+            button.className =
+              "w-full rounded-xl border border-green-400 bg-green-500/20 p-4 text-left ring-2 ring-green-400/60";
+            button.disabled = true;
+            button.classList.add("opacity-80", "cursor-not-allowed");
+          }
+        });
+
+        if (answerRecord.isCorrect) {
+          elements.feedbackBox.className =
+            "mt-6 rounded-xl border border-green-400 bg-green-500/10 px-4 py-3 text-sm sm:text-base";
+          elements.feedbackBox.innerHTML =
+            "✅ <strong>Você acertou!</strong> Questão já respondida.";
+        } else {
+          elements.feedbackBox.className =
+            "mt-6 rounded-xl border border-neonRed bg-dangerRed/10 px-4 py-3 text-sm sm:text-base";
+          elements.feedbackBox.innerHTML = `❌ <strong>Você errou.</strong> Questão já respondida. Resposta correta: <strong>${correctAlternative.letra}) ${correctAlternative.texto}</strong>`;
+        }
+
+        elements.feedbackBox.classList.remove("hidden");
+        elements.nextButton.classList.remove("hidden");
+      }
+
+      function renderQuestion() {
+        const question = state.questions[state.index];
+        state.selected = false;
+        setProgress();
+        setNavigationButtons();
+
+        elements.questionCard.classList.remove("animate-fadeInUp");
+        void elements.questionCard.offsetWidth;
+        elements.questionCard.classList.add("animate-fadeInUp");
+
+        elements.questionTitle.textContent = `${question.numero_questao}. ${question.enunciado}`;
+        elements.questionInstruction.textContent =
+          question.instrucao || "Selecione uma resposta:";
+        elements.answersContainer.innerHTML = "";
+        elements.feedbackBox.classList.add("hidden");
+        elements.nextButton.classList.add("hidden");
+
+        question.alternativas.forEach((alt) => {
+          const button = document.createElement("button");
+          button.type = "button";
+          button.dataset.letter = alt.letra;
+          button.className =
+            "w-full rounded-xl border border-slate-700 bg-slate-900/60 p-4 text-left transition hover:border-neonBlue hover:bg-cyberBlue/20 focus:outline-none focus:ring-2 focus:ring-neonBlue/60";
+          button.innerHTML = `<span class="mr-2 font-bold text-neonBlue">${alt.letra})</span>${alt.texto}`;
+          button.addEventListener("click", () => handleAnswer(alt, button));
+          elements.answersContainer.appendChild(button);
+        });
+
+        const previousAnswer = state.answersByIndex[state.index];
+        if (previousAnswer) {
+          state.selected = true;
+          renderAnsweredState(previousAnswer);
+        }
+      }
+
+      function handleAnswer(selectedAlternative, selectedButton) {
+        if (state.selected) return;
+        state.selected = true;
+
+        const question = state.questions[state.index];
+        const correctAlternative = question.alternativas.find((alt) => alt.correta);
+
+        lockAllAlternatives();
+
+        const selectedIsCorrect = Boolean(selectedAlternative.correta);
+        state.answersByIndex[state.index] = {
+          selectedLetter: selectedAlternative.letra,
+          isCorrect: selectedIsCorrect,
+        };
+
+        if (selectedIsCorrect) {
+          state.correct += 1;
+          selectedButton.className =
+            "w-full rounded-xl border border-green-400 bg-green-500/20 p-4 text-left ring-2 ring-green-400/60";
+          elements.feedbackBox.className =
+            "mt-6 rounded-xl border border-green-400 bg-green-500/10 px-4 py-3 text-sm sm:text-base";
+          elements.feedbackBox.innerHTML = "✅ <strong>Você acertou!</strong>";
+        } else {
+          selectedButton.className =
+            "w-full rounded-xl border border-neonRed bg-dangerRed/20 p-4 text-left ring-2 ring-neonRed/60";
+
+          Array.from(elements.answersContainer.children).forEach((button) => {
+            const letter = button.dataset.letter;
+            if (correctAlternative && letter === correctAlternative.letra) {
+              button.className =
+                "w-full rounded-xl border border-green-400 bg-green-500/20 p-4 text-left ring-2 ring-green-400/60";
+            }
+          });
+
+          elements.feedbackBox.className =
+            "mt-6 rounded-xl border border-neonRed bg-dangerRed/10 px-4 py-3 text-sm sm:text-base";
+          elements.feedbackBox.innerHTML = `❌ <strong>Você errou.</strong> Resposta correta: <strong>${correctAlternative.letra}) ${correctAlternative.texto}</strong>`;
+        }
+
+        elements.feedbackBox.classList.remove("hidden");
+        elements.nextButton.classList.remove("hidden");
+      }
+
+      function showResults() {
+        const total = state.questions.length;
+        const wrong = total - state.correct;
+        const rate = Math.round((state.correct / total) * 100);
+
+        elements.quizState.classList.add("hidden");
+        elements.resultState.classList.remove("hidden");
+        elements.finalCorrect.textContent = `${state.correct}`;
+        elements.finalWrong.textContent = `${wrong}`;
+        elements.finalRate.textContent = `Aproveitamento: ${rate}%`;
+      }
+
+      function nextQuestion() {
+        state.index += 1;
+        if (state.index >= state.questions.length) {
+          elements.progressBar.style.width = "100%";
+          elements.progressText.textContent = `${state.questions.length}/${state.questions.length}`;
+          showResults();
+          return;
+        }
+        renderQuestion();
+      }
+
+      function previousQuestion() {
+        if (state.index === 0) return;
+        state.index -= 1;
+        renderQuestion();
+      }
+
+      function restartQuiz() {
+        resetAttemptState();
+        setupAttemptQuestions();
+        elements.startState.classList.add("hidden");
+        elements.loadingState.classList.add("hidden");
+        elements.errorState.classList.add("hidden");
+        elements.resultState.classList.add("hidden");
+        elements.quizState.classList.remove("hidden");
+        renderQuestion();
+      }
+
+      async function initQuiz() {
+        state.isLoading = true;
+        try {
+          const response = await fetch("./QUESTOES.json");
+          if (!response.ok) throw new Error("Falha ao carregar JSON");
+          const data = await response.json();
+
+          if (!Array.isArray(data) || data.length === 0) {
+            throw new Error("Formato inválido");
+          }
+
+          state.sourceQuestions = data;
+          resetAttemptState();
+          setupAttemptQuestions();
+          elements.loadingState.classList.add("hidden");
+          elements.quizState.classList.remove("hidden");
+          renderQuestion();
+        } catch (error) {
+          elements.loadingState.classList.add("hidden");
+          elements.quizState.classList.add("hidden");
+          elements.errorState.classList.remove("hidden");
+          console.error(error);
+        } finally {
+          state.isLoading = false;
+        }
+      }
+
+      elements.startButton.addEventListener("click", beginQuiz);
+      elements.retryButton.addEventListener("click", beginQuiz);
+      elements.prevButton.addEventListener("click", previousQuestion);
+      elements.nextButton.addEventListener("click", nextQuestion);
+      elements.restartButton.addEventListener("click", restartQuiz);
+    </script>
+  </body>
+</html>
