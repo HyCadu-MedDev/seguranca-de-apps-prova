@@ -3,23 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Quiz - Segurança de Aplicação</title>
+    <title>Quiz - Segurança de Redes</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
         theme: {
           extend: {
             colors: {
-              cyberBlue: "#1E40AF",
-              neonBlue: "#38BDF8",
-              dangerRed: "#DC2626",
-              neonRed: "#F43F5E",
-              baseDark: "#070B1A",
-              panelDark: "#0B1228",
+              reggaeGreen: "#00A651",
+              reggaeGold: "#FFD100",
+              reggaeRed: "#CE1126",
+              baseDark: "#0A0A0A",
+              panelDark: "#1A1A1A",
             },
             boxShadow: {
-              glowBlue: "0 0 30px rgba(56, 189, 248, 0.35)",
-              glowRed: "0 0 30px rgba(244, 63, 94, 0.28)",
+              glowGold: "0 0 30px rgba(255, 209, 0, 0.35)",
+              glowRed: "0 0 30px rgba(206, 17, 38, 0.28)",
             },
             keyframes: {
               floatPulse: {
@@ -41,18 +40,18 @@
     </script>
   </head>
   <body
-    class="min-h-screen bg-baseDark text-slate-100 antialiased selection:bg-neonBlue/30"
+    class="min-h-screen bg-baseDark text-slate-100 antialiased selection:bg-reggaeGold/30"
   >
     <div
-      class="pointer-events-none fixed inset-0 -z-10 bg-[radial-gradient(circle_at_20%_20%,rgba(56,189,248,0.20),transparent_35%),radial-gradient(circle_at_80%_10%,rgba(244,63,94,0.18),transparent_30%),radial-gradient(circle_at_50%_80%,rgba(30,64,175,0.22),transparent_35%)]"
+      class="pointer-events-none fixed inset-0 -z-10 bg-[radial-gradient(circle_at_20%_20%,rgba(255,209,0,0.20),transparent_35%),radial-gradient(circle_at_80%_10%,rgba(206,17,38,0.18),transparent_30%),radial-gradient(circle_at_50%_80%,rgba(0,166,81,0.22),transparent_35%)]"
     ></div>
 
     <main class="mx-auto w-full max-w-4xl px-4 py-8 sm:px-6 sm:py-10">
       <header class="mb-8 text-center">
         <p
-          class="mb-2 inline-flex animate-floatPulse items-center rounded-full border border-neonBlue/40 bg-cyberBlue/20 px-4 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-neonBlue"
+          class="mb-2 inline-flex animate-floatPulse items-center rounded-full border border-reggaeGold/40 bg-reggaeGreen/20 px-4 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-reggaeGold"
         >
-          Segurança de Aplicação
+          Segurança de Redes
         </p>
         <h1 class="text-2xl font-bold sm:text-3xl md:text-4xl">
           Quiz Interativo
@@ -63,34 +62,34 @@
       </header>
 
       <section
-        class="rounded-2xl border border-neonBlue/20 bg-panelDark/80 p-4 shadow-glowBlue backdrop-blur-sm sm:p-6"
+        class="rounded-2xl border border-reggaeGold/20 bg-panelDark/80 p-4 shadow-glowGold backdrop-blur-sm sm:p-6"
       >
         <div id="startState" class="animate-fadeInUp py-12 text-center">
           <p class="mx-auto mb-4 max-w-xl text-sm text-slate-300 sm:text-base">
             Prepare-se para responder as questões da prova de Segurança de
-            Aplicação.
+            Redes.
           </p>
-          <div class="mx-auto mb-6 max-w-xl rounded-xl border border-neonBlue/30 bg-slate-900/50 p-4 text-left">
-            <p class="mb-3 text-sm font-semibold text-neonBlue">Modo do Quiz</p>
-            <label class="mb-2 flex cursor-pointer items-center gap-3 rounded-lg border border-slate-700/70 p-3 transition hover:border-neonBlue/50">
+          <div class="mx-auto mb-6 max-w-xl rounded-xl border border-reggaeGold/30 bg-slate-900/50 p-4 text-left">
+            <p class="mb-3 text-sm font-semibold text-reggaeGold">Modo do Quiz</p>
+            <label class="mb-2 flex cursor-pointer items-center gap-3 rounded-lg border border-slate-700/70 p-3 transition hover:border-reggaeGold/50">
               <input
                 type="radio"
                 name="quizMode"
                 value="shuffle"
                 checked
-                class="h-4 w-4 accent-neonBlue"
+                class="h-4 w-4 accent-reggaeGold"
               />
               <span>
                 <span class="block font-semibold">Embaralhado</span>
                 <span class="text-xs text-slate-400">Questões em ordem aleatória.</span>
               </span>
             </label>
-            <label class="flex cursor-pointer items-center gap-3 rounded-lg border border-slate-700/70 p-3 transition hover:border-neonBlue/50">
+            <label class="flex cursor-pointer items-center gap-3 rounded-lg border border-slate-700/70 p-3 transition hover:border-reggaeGold/50">
               <input
                 type="radio"
                 name="quizMode"
                 value="ava"
-                class="h-4 w-4 accent-neonBlue"
+                class="h-4 w-4 accent-reggaeGold"
               />
               <span>
                 <span class="block font-semibold">Na ordem do AVA</span>
@@ -100,7 +99,7 @@
           </div>
           <button
             id="startButton"
-            class="rounded-lg bg-gradient-to-r from-cyberBlue to-neonRed px-7 py-3 text-base font-bold text-white transition hover:scale-[1.02] active:scale-95"
+            class="rounded-lg bg-gradient-to-r from-reggaeGreen to-reggaeRed px-7 py-3 text-base font-bold text-white transition hover:scale-[1.02] active:scale-95"
           >
             Iniciar Quiz
           </button>
@@ -111,14 +110,14 @@
         </div>
 
         <div id="errorState" class="hidden py-10 text-center">
-          <p class="font-semibold text-neonRed">Erro ao carregar o quiz.</p>
+          <p class="font-semibold text-reggaeRed">Erro ao carregar o quiz.</p>
           <p class="mt-2 text-sm text-slate-300">
             Abra este projeto com um servidor local (ex.: Live Server) e tente
             novamente.
           </p>
           <button
             id="retryButton"
-            class="mt-5 rounded-lg border border-neonBlue/40 bg-slate-900/60 px-5 py-2 font-semibold text-neonBlue transition hover:border-neonRed hover:text-neonRed"
+            class="mt-5 rounded-lg border border-reggaeGold/40 bg-slate-900/60 px-5 py-2 font-semibold text-reggaeGold transition hover:border-reggaeRed hover:text-reggaeRed"
           >
             Tentar novamente
           </button>
@@ -128,12 +127,12 @@
           <div class="mb-6">
             <div class="mb-2 flex items-center justify-between text-xs sm:text-sm">
               <span class="text-slate-300">Progresso</span>
-              <span id="progressText" class="font-semibold text-neonBlue"></span>
+              <span id="progressText" class="font-semibold text-reggaeGold"></span>
             </div>
             <div class="h-3 overflow-hidden rounded-full bg-slate-800/90">
               <div
                 id="progressBar"
-                class="h-full w-0 rounded-full bg-gradient-to-r from-neonBlue to-neonRed transition-all duration-500"
+                class="h-full w-0 rounded-full bg-gradient-to-r from-reggaeGold to-reggaeRed transition-all duration-500"
               ></div>
             </div>
           </div>
@@ -152,13 +151,13 @@
             <div class="mt-6 flex items-center justify-between gap-3">
               <button
                 id="prevButton"
-                class="rounded-lg border border-neonBlue/40 bg-slate-900/60 px-5 py-2 font-semibold text-neonBlue transition hover:border-neonRed hover:text-neonRed disabled:cursor-not-allowed disabled:opacity-40"
+                class="rounded-lg border border-reggaeGold/40 bg-slate-900/60 px-5 py-2 font-semibold text-reggaeGold transition hover:border-reggaeRed hover:text-reggaeRed disabled:cursor-not-allowed disabled:opacity-40"
               >
                 Questão anterior
               </button>
               <button
                 id="nextButton"
-                class="hidden rounded-lg bg-gradient-to-r from-cyberBlue to-neonRed px-5 py-2 font-semibold text-white transition hover:scale-[1.02] active:scale-95"
+                class="hidden rounded-lg bg-gradient-to-r from-reggaeGreen to-reggaeRed px-5 py-2 font-semibold text-white transition hover:scale-[1.02] active:scale-95"
               >
                 Próxima questão
               </button>
@@ -171,13 +170,13 @@
           <p class="mt-2 text-slate-300">Seu desempenho no quiz:</p>
 
           <div class="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2">
-            <div class="rounded-xl border border-neonBlue/40 bg-cyberBlue/10 p-5">
-              <p class="text-sm uppercase tracking-wider text-neonBlue">Corretas</p>
-              <p id="finalCorrect" class="mt-1 text-3xl font-bold text-neonBlue"></p>
+            <div class="rounded-xl border border-reggaeGold/40 bg-reggaeGreen/10 p-5">
+              <p class="text-sm uppercase tracking-wider text-reggaeGold">Corretas</p>
+              <p id="finalCorrect" class="mt-1 text-3xl font-bold text-reggaeGold"></p>
             </div>
-            <div class="rounded-xl border border-neonRed/40 bg-dangerRed/10 p-5">
-              <p class="text-sm uppercase tracking-wider text-neonRed">Erradas</p>
-              <p id="finalWrong" class="mt-1 text-3xl font-bold text-neonRed"></p>
+            <div class="rounded-xl border border-reggaeRed/40 bg-reggaeRed/10 p-5">
+              <p class="text-sm uppercase tracking-wider text-reggaeRed">Erradas</p>
+              <p id="finalWrong" class="mt-1 text-3xl font-bold text-reggaeRed"></p>
             </div>
           </div>
 
@@ -185,7 +184,7 @@
 
           <button
             id="restartButton"
-            class="mt-6 rounded-lg border border-neonBlue/40 bg-slate-900/60 px-5 py-2 font-semibold text-neonBlue transition hover:border-neonRed hover:text-neonRed"
+            class="mt-6 rounded-lg border border-reggaeGold/40 bg-slate-900/60 px-5 py-2 font-semibold text-reggaeGold transition hover:border-reggaeRed hover:text-reggaeRed"
           >
             Refazer quiz
           </button>
@@ -195,10 +194,10 @@
 
     <footer class="pb-6 text-center">
       <p class="text-xs text-slate-400 sm:text-sm">
-        Desenvolvido por: Cadu Kar Alho
+        Desenvolvido por: Full-Stack da Aldeia da Fumaça
       </p>
       <p class="text-xs text-slate-400 sm:text-sm">
-        Centro Infernal Salesiano
+        Faculdade Católica (Ou quase) de Vitória
       </p>
     </footer>
 
@@ -318,7 +317,7 @@
           const letter = button.dataset.letter;
           if (letter === answerRecord.selectedLetter && !answerRecord.isCorrect) {
             button.className =
-              "w-full rounded-xl border border-neonRed bg-dangerRed/20 p-4 text-left ring-2 ring-neonRed/60";
+              "w-full rounded-xl border border-reggaeRed bg-reggaeRed/20 p-4 text-left ring-2 ring-reggaeRed/60";
             button.disabled = true;
             button.classList.add("opacity-80", "cursor-not-allowed");
           }
@@ -338,7 +337,7 @@
             "✅ <strong>Você acertou!</strong> Questão já respondida.";
         } else {
           elements.feedbackBox.className =
-            "mt-6 rounded-xl border border-neonRed bg-dangerRed/10 px-4 py-3 text-sm sm:text-base";
+            "mt-6 rounded-xl border border-reggaeRed bg-reggaeRed/10 px-4 py-3 text-sm sm:text-base";
           elements.feedbackBox.innerHTML = `❌ <strong>Você errou.</strong> Questão já respondida. Resposta correta: <strong>${correctAlternative.letra}) ${correctAlternative.texto}</strong>`;
         }
 
@@ -368,8 +367,8 @@
           button.type = "button";
           button.dataset.letter = alt.letra;
           button.className =
-            "w-full rounded-xl border border-slate-700 bg-slate-900/60 p-4 text-left transition hover:border-neonBlue hover:bg-cyberBlue/20 focus:outline-none focus:ring-2 focus:ring-neonBlue/60";
-          button.innerHTML = `<span class="mr-2 font-bold text-neonBlue">${alt.letra})</span>${alt.texto}`;
+            "w-full rounded-xl border border-slate-700 bg-slate-900/60 p-4 text-left transition hover:border-reggaeGold hover:bg-reggaeGreen/20 focus:outline-none focus:ring-2 focus:ring-reggaeGold/60";
+          button.innerHTML = `<span class="mr-2 font-bold text-reggaeGold">${alt.letra})</span>${alt.texto}`;
           button.addEventListener("click", () => handleAnswer(alt, button));
           elements.answersContainer.appendChild(button);
         });
@@ -405,7 +404,7 @@
           elements.feedbackBox.innerHTML = "✅ <strong>Você acertou!</strong>";
         } else {
           selectedButton.className =
-            "w-full rounded-xl border border-neonRed bg-dangerRed/20 p-4 text-left ring-2 ring-neonRed/60";
+            "w-full rounded-xl border border-reggaeRed bg-reggaeRed/20 p-4 text-left ring-2 ring-reggaeRed/60";
 
           Array.from(elements.answersContainer.children).forEach((button) => {
             const letter = button.dataset.letter;
@@ -416,7 +415,7 @@
           });
 
           elements.feedbackBox.className =
-            "mt-6 rounded-xl border border-neonRed bg-dangerRed/10 px-4 py-3 text-sm sm:text-base";
+            "mt-6 rounded-xl border border-reggaeRed bg-reggaeRed/10 px-4 py-3 text-sm sm:text-base";
           elements.feedbackBox.innerHTML = `❌ <strong>Você errou.</strong> Resposta correta: <strong>${correctAlternative.letra}) ${correctAlternative.texto}</strong>`;
         }
 
