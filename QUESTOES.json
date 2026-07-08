@@ -1305,5 +1305,159 @@
         "correta": false
       }
     ]
+  }, {
+    "numero_questao": "1",
+    "enunciado": "De acordo com as diretrizes do contrato sobre a titularidade e independência tecnológica, qual é a regra estabelecida sobre a reutilização do código desenvolvido?",
+    "instrucao": "Selecione a resposta:",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "A CONTRATADA está terminantemente proibida de reutilizar qualquer lógica de programação ou infraestrutura desenvolvida para a CONTRATANTE em outros projetos.",
+        "correta": false,
+        "comentario_da_resposta": "Incorreta. O contrato estipula que a prestação dos serviços não possui caráter de exclusividade[cite: 16]."
+      },
+      {
+        "letra": "B",
+        "texto": "A CONTRATADA pode reutilizar a arquitetura estrutural e lógicas de programação, garantindo a confidencialidade e não utilizando as marcas, design ou dados da CONTRATANTE.",
+        "correta": true,
+        "comentario_da_resposta": "Correta. A CONTRATADA reserva-se o direito de reutilizar a arquitetura estrutural e as lógicas de programação [cite: 17], sendo expressamente vedada a utilização de marcas, elementos de design visual exclusivo ou informações confidenciais da CONTRATANTE[cite: 18]."
+      },
+      {
+        "letra": "C",
+        "texto": "A CONTRATANTE detém exclusividade mercadológica absoluta, mas precisará pagar royalties adicionais caso decida expandir ou alterar a plataforma.",
+        "correta": false,
+        "comentario_da_resposta": "Incorreta. A CONTRATANTE pode usufruir e alterar a plataforma sem dependência ou faturamento de royalties adicionais à CONTRATADA[cite: 12]."
+      },
+      {
+        "letra": "D",
+        "texto": "A CONTRATANTE receberá apenas uma licença temporária de uso comercial do código-fonte, que deverá ser renovada a cada 5 anos.",
+        "correta": false,
+        "comentario_da_resposta": "Incorreta. A CONTRATADA concede à CONTRATANTE uma licença de uso do código-fonte de forma perpétua, irrestrita e irrevogável[cite: 15]."
+      }
+    ]
+  },
+  {
+    "numero_questao": "2",
+    "enunciado": "Com relação à taxa mensal de sustentação operacional e os limites da infraestrutura após a entrega da plataforma, qual é o valor acordado e a franquia de armazenamento inclusa?",
+    "instrucao": "Selecione a resposta:",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "Valor mensal de R$ 6.000,00 com armazenamento ilimitado em nuvem.",
+        "correta": false,
+        "comentario_da_resposta": "Incorreta. R$ 6.000,00 é o valor da taxa fixa de desenvolvimento (Setup) inicial do projeto[cite: 34]."
+      },
+      {
+        "letra": "B",
+        "texto": "Valor mensal de R$ 299,00, sem franquia estipulada de armazenamento (cobrado totalmente à parte).",
+        "correta": false,
+        "comentario_da_resposta": "Incorreta. O valor mensal de R$ 299,00 inclui uma franquia de armazenamento[cite: 44, 45]."
+      },
+      {
+        "letra": "C",
+        "texto": "Valor mensal de R$ 299,00, cobrindo a gestão de infraestrutura com uma franquia de até 50 GB de armazenamento e tráfego de dados mensal.",
+        "correta": true,
+        "comentario_da_resposta": "Correta. O contrato estipula um valor fixo mensal de R$ 299,00 [cite: 44], que cobre a gestão e suporte incluindo uma franquia de até 50 GB de armazenamento de arquivos e tráfego de dados[cite: 45]."
+      },
+      {
+        "letra": "D",
+        "texto": "Valor mensal de R$ 1.800,00, englobando correções de bugs, criação de novas funcionalidades e hospedagem irrestrita.",
+        "correta": false,
+        "comentario_da_resposta": "Incorreta. R$ 1.800,00 refere-se a uma das parcelas do Setup (30% de Entrada ou Homologação)[cite: 38, 39], não ao valor de sustentação mensal."
+      }
+    ]
+  },
+  {
+    "numero_questao": "3",
+    "enunciado": "No que tange à adequação à Lei Geral de Proteção de Dados (LGPD) estipulada na Cláusula Sétima, como são definidos os papéis da CONTRATANTE e da CONTRATADA?",
+    "instrucao": "Selecione a resposta:",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "A CONTRATADA atuará unicamente como Operadora e a CONTRATANTE na qualidade de Controladora.",
+        "correta": true,
+        "comentario_da_resposta": "Correta. O contrato define expressamente que a CONTRATADA atuará na qualidade de Operadora e a CONTRATANTE na qualidade de Controladora, nos termos da Lei nº 13.709/2018[cite: 55]."
+      },
+      {
+        "letra": "B",
+        "texto": "Ambas as partes atuarão solidariamente como Controladoras dos dados de pacientes.",
+        "correta": false,
+        "comentario_da_resposta": "Incorreta. Apenas a CONTRATANTE atuará na qualidade de Controladora[cite: 55]."
+      },
+      {
+        "letra": "C",
+        "texto": "A CONTRATADA é a Controladora exclusiva dos dados inseridos no banco de dados, cabendo a ela colher o consentimento dos pacientes.",
+        "correta": false,
+        "comentario_da_resposta": "Incorreta. Caberá exclusivamente à CONTRATANTE gerenciar as bases legais de consentimento e os direitos dos pacientes[cite: 56]."
+      },
+      {
+        "letra": "D",
+        "texto": "Nenhuma das partes possui responsabilidades sob a LGPD, já que se trata de um contrato apenas de desenvolvimento de software de código-aberto.",
+        "correta": false,
+        "comentario_da_resposta": "Incorreta. As partes assumem responsabilidades formais de Operadora e Controladora, respectivamente, nos termos da LGPD[cite: 55]."
+      }
+    ]
+  },
+  {
+    "numero_questao": "4",
+    "enunciado": "Sobre o Acordo de Nível de Serviço (SLA) de suporte técnico, qual é o tempo de início do atendimento estipulado caso o sistema sofra uma Falha Crítica (Severidade 1) e fique totalmente fora do ar?",
+    "instrucao": "Selecione a resposta:",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "Início do atendimento em até 6 horas úteis.",
+        "correta": false,
+        "comentario_da_resposta": "Incorreta. Este é o prazo estabelecido para falhas de Severidade 2 (Falha Relevante)[cite: 52]."
+      },
+      {
+        "letra": "B",
+        "texto": "Início do atendimento em até 1 dia útil.",
+        "correta": false,
+        "comentario_da_resposta": "Incorreta. Este é o prazo estabelecido para falhas de Severidade 3 (Falha Menor ou Dúvida Técnica)[cite: 53]."
+      },
+      {
+        "letra": "C",
+        "texto": "Atendimento imediato, com solução garantida em no máximo 2 horas úteis.",
+        "correta": false,
+        "comentario_da_resposta": "Incorreta. O SLA garante o início do atendimento em até 2 horas úteis, não a solução em 2 horas[cite: 51]."
+      },
+      {
+        "letra": "D",
+        "texto": "Início do atendimento em até 2 (duas) horas úteis.",
+        "correta": true,
+        "comentario_da_resposta": "Correta. Para Severidade 1, o contrato exige o início do atendimento em até 2 (duas) horas úteis e solução/contorno em até 12 (oito) horas úteis[cite: 51]."
+      }
+    ]
+  },
+  {
+    "numero_questao": "5",
+    "enunciado": "Segundo a Cláusula Terceira (Do Escopo Técnico e Arquitetura), o acesso do sistema será estruturado com base em três perfis específicos. Quais são esses perfis?",
+    "instrucao": "Selecione a resposta:",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "Painel do Administrador Geral, Painel do Paciente e Painel de Laboratório.",
+        "correta": false,
+        "comentario_da_resposta": "Incorreta. O Painel do Paciente não está previsto no escopo técnico definido[cite: 20, 21, 22, 23]."
+      },
+      {
+        "letra": "B",
+        "texto": "Painel do Moderador, Painel do Protético Parceiro e Painel do Dentista.",
+        "correta": true,
+        "comentario_da_resposta": "Correta. O acesso será estruturado nestes três perfis: Painel do Moderador [cite: 21], Painel do Protético Parceiro [cite: 22] e Painel do Dentista[cite: 23]."
+      },
+      {
+        "letra": "C",
+        "texto": "Painel do Desenvolvedor, Painel de Suporte Clínico e Painel de Faturamento.",
+        "correta": false,
+        "comentario_da_resposta": "Incorreta. Nenhum desses painéis faz parte da estrutura de três perfis mencionada na Cláusula Terceira[cite: 20, 21, 22, 23]."
+      },
+      {
+        "letra": "D",
+        "texto": "Painel da Clínica, Painel de Escaneamento 3D Externo e Painel do Protético.",
+        "correta": false,
+        "comentario_da_resposta": "Incorreta. A descrição diverge da nomenclatura e das funcionalidades dos três perfis oficiais do escopo[cite: 20, 21, 22, 23]."
+      }
+    ]
   }
 ]
