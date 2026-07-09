@@ -3,22 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Quiz - APP SEC</title>
+    <title>Quiz - Segurança de Redes</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
         theme: {
           extend: {
             colors: {
-              reggaeGreen: "#00A651",
-              reggaeGold: "#FFD100",
-              reggaeRed: "#CE1126",
-              baseDark: "#0A0A0A",
-              panelDark: "#1A1A1A",
+              matrixGreen: "#00FF41",
+              matrixGreenDim: "#00A82E",
+              matrixGreenDark: "#003B0F",
+              baseDark: "#000000",
+              panelDark: "#020D02",
+            },
+            fontFamily: {
+              mono: ["'Courier New'", "monospace"],
             },
             boxShadow: {
-              glowGold: "0 0 30px rgba(255, 209, 0, 0.35)",
-              glowRed: "0 0 30px rgba(206, 17, 38, 0.28)",
+              glowGreen: "0 0 30px rgba(0, 255, 65, 0.35)",
+              glowGreenStrong: "0 0 45px rgba(0, 255, 65, 0.5)",
             },
             keyframes: {
               floatPulse: {
@@ -29,95 +32,131 @@
                 "0%": { opacity: "0", transform: "translateY(8px)" },
                 "100%": { opacity: "1", transform: "translateY(0)" },
               },
+              flicker: {
+                "0%, 100%": { opacity: "1" },
+                "50%": { opacity: "0.92" },
+              },
             },
             animation: {
               floatPulse: "floatPulse 3.2s ease-in-out infinite",
               fadeInUp: "fadeInUp 0.35s ease-out",
+              flicker: "flicker 4s ease-in-out infinite",
             },
           },
         },
       };
     </script>
+    <style>
+      body {
+        font-family: 'Courier New', monospace;
+      }
+      #matrixCanvas {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -10;
+        opacity: 0.35;
+      }
+      .scanlines::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        z-index: 50;
+        pointer-events: none;
+        background: repeating-linear-gradient(
+          0deg,
+          rgba(0, 255, 65, 0.03) 0px,
+          rgba(0, 255, 65, 0.03) 1px,
+          transparent 1px,
+          transparent 3px
+        );
+      }
+      .text-glow {
+        text-shadow: 0 0 8px rgba(0, 255, 65, 0.6);
+      }
+    </style>
   </head>
   <body
-    class="min-h-screen bg-baseDark text-slate-100 antialiased selection:bg-reggaeGold/30"
+    class="min-h-screen bg-baseDark text-matrixGreen antialiased selection:bg-matrixGreen/30 scanlines"
   >
+    <canvas id="matrixCanvas"></canvas>
     <div
-      class="pointer-events-none fixed inset-0 -z-10 bg-[radial-gradient(circle_at_20%_20%,rgba(255,209,0,0.20),transparent_35%),radial-gradient(circle_at_80%_10%,rgba(206,17,38,0.18),transparent_30%),radial-gradient(circle_at_50%_80%,rgba(0,166,81,0.22),transparent_35%)]"
+      class="pointer-events-none fixed inset-0 -z-10 bg-[radial-gradient(circle_at_20%_20%,rgba(0,255,65,0.15),transparent_35%),radial-gradient(circle_at_80%_10%,rgba(0,255,65,0.10),transparent_30%),radial-gradient(circle_at_50%_80%,rgba(0,168,46,0.15),transparent_35%)]"
     ></div>
 
     <main class="mx-auto w-full max-w-4xl px-4 py-8 sm:px-6 sm:py-10">
-      <header class="mb-8 text-center">
+      <header class="mb-8 text-center animate-flicker">
         <p
-          class="mb-2 inline-flex animate-floatPulse items-center rounded-full border border-reggaeGold/40 bg-reggaeGreen/20 px-4 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-reggaeGold"
+          class="mb-2 inline-flex animate-floatPulse items-center rounded-full border border-matrixGreen/50 bg-matrixGreenDark/60 px-4 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-matrixGreen text-glow"
         >
-          Segurança de APLICAÇÕES
+          &gt; SEGURANÇA DE REDES_
         </p>
-        <h1 class="text-2xl font-bold sm:text-3xl md:text-4xl">
+        <h1 class="text-2xl font-bold sm:text-3xl md:text-4xl text-glow">
           Quiz Interativo
         </h1>
-        <p class="mx-auto mt-2 max-w-2xl text-sm text-slate-300 sm:text-base">
-          Responda as questões e veja feedback imediato com o resultado correto.
+        <p class="mx-auto mt-2 max-w-2xl text-sm text-matrixGreenDim sm:text-base">
+          &gt; Responda as questões e veja feedback imediato com o resultado correto.
         </p>
       </header>
 
       <section
-        class="rounded-2xl border border-reggaeGold/20 bg-panelDark/80 p-4 shadow-glowGold backdrop-blur-sm sm:p-6"
+        class="rounded-2xl border border-matrixGreen/30 bg-panelDark/90 p-4 shadow-glowGreen backdrop-blur-sm sm:p-6"
       >
         <div id="startState" class="animate-fadeInUp py-12 text-center">
-          <p class="mx-auto mb-4 max-w-xl text-sm text-slate-300 sm:text-base">
-            Prepare-se para responder as questões da prova de Segurança de
-            APPS
+          <p class="mx-auto mb-4 max-w-xl text-sm text-matrixGreenDim sm:text-base">
+            &gt; Prepare-se para responder as questões da prova de Segurança de Redes
           </p>
-          <div class="mx-auto mb-6 max-w-xl rounded-xl border border-reggaeGold/30 bg-slate-900/50 p-4 text-left">
-            <p class="mb-3 text-sm font-semibold text-reggaeGold">Modo do Quiz</p>
-            <label class="mb-2 flex cursor-pointer items-center gap-3 rounded-lg border border-slate-700/70 p-3 transition hover:border-reggaeGold/50">
+          <div class="mx-auto mb-6 max-w-xl rounded-xl border border-matrixGreen/30 bg-black/60 p-4 text-left">
+            <p class="mb-3 text-sm font-semibold text-matrixGreen text-glow">Modo do Quiz</p>
+            <label class="mb-2 flex cursor-pointer items-center gap-3 rounded-lg border border-matrixGreen/20 p-3 transition hover:border-matrixGreen/60">
               <input
                 type="radio"
                 name="quizMode"
                 value="shuffle"
                 checked
-                class="h-4 w-4 accent-reggaeGold"
+                class="h-4 w-4 accent-matrixGreen"
               />
               <span>
                 <span class="block font-semibold">Embaralhado</span>
-                <span class="text-xs text-slate-400">Questões em ordem aleatória.</span>
+                <span class="text-xs text-matrixGreenDim">Questões em ordem aleatória.</span>
               </span>
             </label>
-            <label class="flex cursor-pointer items-center gap-3 rounded-lg border border-slate-700/70 p-3 transition hover:border-reggaeGold/50">
+            <label class="flex cursor-pointer items-center gap-3 rounded-lg border border-matrixGreen/20 p-3 transition hover:border-matrixGreen/60">
               <input
                 type="radio"
                 name="quizMode"
                 value="ava"
-                class="h-4 w-4 accent-reggaeGold"
+                class="h-4 w-4 accent-matrixGreen"
               />
               <span>
                 <span class="block font-semibold">Na ordem do AVA</span>
-                <span class="text-xs text-slate-400">Mantém a ordem original do AVA .</span>
+                <span class="text-xs text-matrixGreenDim">Mantém a ordem original do AVA.</span>
               </span>
             </label>
           </div>
           <button
             id="startButton"
-            class="rounded-lg bg-gradient-to-r from-reggaeGreen to-reggaeRed px-7 py-3 text-base font-bold text-white transition hover:scale-[1.02] active:scale-95"
+            class="rounded-lg bg-gradient-to-r from-matrixGreenDim to-matrixGreen px-7 py-3 text-base font-bold text-black shadow-glowGreen transition hover:scale-[1.02] active:scale-95"
           >
             Iniciar Quiz
           </button>
         </div>
 
         <div id="loadingState" class="hidden py-14 text-center">
-          <p class="text-slate-300">Carregando questões...</p>
+          <p class="text-matrixGreenDim">&gt; Carregando questões...</p>
         </div>
 
         <div id="errorState" class="hidden py-10 text-center">
-          <p class="font-semibold text-reggaeRed">Erro ao carregar o quiz.</p>
-          <p class="mt-2 text-sm text-slate-300">
+          <p class="font-semibold text-matrixGreen text-glow">&gt; Erro ao carregar o quiz.</p>
+          <p class="mt-2 text-sm text-matrixGreenDim">
             Abra este projeto com um servidor local (ex.: Live Server) e tente
             novamente.
           </p>
           <button
             id="retryButton"
-            class="mt-5 rounded-lg border border-reggaeGold/40 bg-slate-900/60 px-5 py-2 font-semibold text-reggaeGold transition hover:border-reggaeRed hover:text-reggaeRed"
+            class="mt-5 rounded-lg border border-matrixGreen/40 bg-black/60 px-5 py-2 font-semibold text-matrixGreen transition hover:border-matrixGreen hover:shadow-glowGreen"
           >
             Tentar novamente
           </button>
@@ -126,20 +165,20 @@
         <div id="quizState" class="hidden">
           <div class="mb-6">
             <div class="mb-2 flex items-center justify-between text-xs sm:text-sm">
-              <span class="text-slate-300">Progresso</span>
-              <span id="progressText" class="font-semibold text-reggaeGold"></span>
+              <span class="text-matrixGreenDim">Progresso</span>
+              <span id="progressText" class="font-semibold text-matrixGreen text-glow"></span>
             </div>
-            <div class="h-3 overflow-hidden rounded-full bg-slate-800/90">
+            <div class="h-3 overflow-hidden rounded-full bg-matrixGreenDark/80 border border-matrixGreen/20">
               <div
                 id="progressBar"
-                class="h-full w-0 rounded-full bg-gradient-to-r from-reggaeGold to-reggaeRed transition-all duration-500"
+                class="h-full w-0 rounded-full bg-gradient-to-r from-matrixGreenDim to-matrixGreen transition-all duration-500"
               ></div>
             </div>
           </div>
 
           <article id="questionCard" class="animate-fadeInUp">
-            <h2 id="questionTitle" class="mb-3 text-lg font-semibold sm:text-xl"></h2>
-            <p id="questionInstruction" class="mb-6 text-sm text-slate-300"></p>
+            <h2 id="questionTitle" class="mb-3 text-lg font-semibold sm:text-xl text-glow"></h2>
+            <p id="questionInstruction" class="mb-6 text-sm text-matrixGreenDim"></p>
 
             <div id="answersContainer" class="space-y-3"></div>
 
@@ -151,13 +190,13 @@
             <div class="mt-6 flex items-center justify-between gap-3">
               <button
                 id="prevButton"
-                class="rounded-lg border border-reggaeGold/40 bg-slate-900/60 px-5 py-2 font-semibold text-reggaeGold transition hover:border-reggaeRed hover:text-reggaeRed disabled:cursor-not-allowed disabled:opacity-40"
+                class="rounded-lg border border-matrixGreen/40 bg-black/60 px-5 py-2 font-semibold text-matrixGreen transition hover:border-matrixGreen hover:shadow-glowGreen disabled:cursor-not-allowed disabled:opacity-40"
               >
                 Questão anterior
               </button>
               <button
                 id="nextButton"
-                class="hidden rounded-lg bg-gradient-to-r from-reggaeGreen to-reggaeRed px-5 py-2 font-semibold text-white transition hover:scale-[1.02] active:scale-95"
+                class="hidden rounded-lg bg-gradient-to-r from-matrixGreenDim to-matrixGreen px-5 py-2 font-semibold text-black shadow-glowGreen transition hover:scale-[1.02] active:scale-95"
               >
                 Próxima questão
               </button>
@@ -166,25 +205,25 @@
         </div>
 
         <div id="resultState" class="hidden animate-fadeInUp py-6 text-center">
-          <h2 class="text-2xl font-bold sm:text-3xl">Resultado Final</h2>
-          <p class="mt-2 text-slate-300">Seu desempenho no quiz:</p>
+          <h2 class="text-2xl font-bold sm:text-3xl text-glow">Resultado Final</h2>
+          <p class="mt-2 text-matrixGreenDim">Seu desempenho no quiz:</p>
 
           <div class="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2">
-            <div class="rounded-xl border border-reggaeGold/40 bg-reggaeGreen/10 p-5">
-              <p class="text-sm uppercase tracking-wider text-reggaeGold">Corretas</p>
-              <p id="finalCorrect" class="mt-1 text-3xl font-bold text-reggaeGold"></p>
+            <div class="rounded-xl border border-matrixGreen/40 bg-matrixGreenDark/40 p-5">
+              <p class="text-sm uppercase tracking-wider text-matrixGreen text-glow">Corretas</p>
+              <p id="finalCorrect" class="mt-1 text-3xl font-bold text-matrixGreen text-glow"></p>
             </div>
-            <div class="rounded-xl border border-reggaeRed/40 bg-reggaeRed/10 p-5">
-              <p class="text-sm uppercase tracking-wider text-reggaeRed">Erradas</p>
-              <p id="finalWrong" class="mt-1 text-3xl font-bold text-reggaeRed"></p>
+            <div class="rounded-xl border border-red-500/40 bg-red-900/10 p-5">
+              <p class="text-sm uppercase tracking-wider text-red-400">Erradas</p>
+              <p id="finalWrong" class="mt-1 text-3xl font-bold text-red-400"></p>
             </div>
           </div>
 
-          <p id="finalRate" class="mt-6 text-lg font-semibold"></p>
+          <p id="finalRate" class="mt-6 text-lg font-semibold text-glow"></p>
 
           <button
             id="restartButton"
-            class="mt-6 rounded-lg border border-reggaeGold/40 bg-slate-900/60 px-5 py-2 font-semibold text-reggaeGold transition hover:border-reggaeRed hover:text-reggaeRed"
+            class="mt-6 rounded-lg border border-matrixGreen/40 bg-black/60 px-5 py-2 font-semibold text-matrixGreen transition hover:border-matrixGreen hover:shadow-glowGreen"
           >
             Refazer quiz
           </button>
@@ -193,15 +232,49 @@
     </main>
 
     <footer class="pb-6 text-center">
-      <p class="text-xs text-slate-400 sm:text-sm">
+      <p class="text-xs text-matrixGreenDim sm:text-sm">
         Desenvolvido por: Full-Stack da Aldeia da Fumaça
       </p>
-      <p class="text-xs text-slate-400 sm:text-sm">
+      <p class="text-xs text-matrixGreenDim sm:text-sm">
         Faculdade Católica (Ou quase) de Vitória
       </p>
     </footer>
 
     <script>
+      // === Efeito visual de fundo estilo Matrix (puramente decorativo, não altera a lógica do quiz) ===
+      (function initMatrixRain() {
+        const canvas = document.getElementById("matrixCanvas");
+        const ctx = canvas.getContext("2d");
+        let width, height, columns, drops;
+        const chars = "アイウエオカキクケコサシスセソタチツテト0123456789ABCDEF";
+
+        function resize() {
+          width = canvas.width = window.innerWidth;
+          height = canvas.height = window.innerHeight;
+          columns = Math.floor(width / 16);
+          drops = new Array(columns).fill(1);
+        }
+
+        function draw() {
+          ctx.fillStyle = "rgba(0, 0, 0, 0.08)";
+          ctx.fillRect(0, 0, width, height);
+          ctx.fillStyle = "#00FF41";
+          ctx.font = "14px monospace";
+          for (let i = 0; i < drops.length; i += 1) {
+            const text = chars[Math.floor(Math.random() * chars.length)];
+            ctx.fillText(text, i * 16, drops[i] * 16);
+            if (drops[i] * 16 > height && Math.random() > 0.975) {
+              drops[i] = 0;
+            }
+            drops[i] += 1;
+          }
+        }
+
+        resize();
+        window.addEventListener("resize", resize);
+        setInterval(draw, 50);
+      })();
+
       const state = {
         sourceQuestions: [],
         questions: [],
@@ -317,14 +390,14 @@
           const letter = button.dataset.letter;
           if (letter === answerRecord.selectedLetter && !answerRecord.isCorrect) {
             button.className =
-              "w-full rounded-xl border border-reggaeRed bg-reggaeRed/20 p-4 text-left ring-2 ring-reggaeRed/60";
+              "w-full rounded-xl border border-red-500 bg-red-900/30 p-4 text-left ring-2 ring-red-500/60";
             button.disabled = true;
             button.classList.add("opacity-80", "cursor-not-allowed");
           }
 
           if (correctAlternative && letter === correctAlternative.letra) {
             button.className =
-              "w-full rounded-xl border border-green-400 bg-green-500/20 p-4 text-left ring-2 ring-green-400/60";
+              "w-full rounded-xl border border-matrixGreen bg-matrixGreen/20 p-4 text-left ring-2 ring-matrixGreen/60";
             button.disabled = true;
             button.classList.add("opacity-80", "cursor-not-allowed");
           }
@@ -332,12 +405,12 @@
 
         if (answerRecord.isCorrect) {
           elements.feedbackBox.className =
-            "mt-6 rounded-xl border border-green-400 bg-green-500/10 px-4 py-3 text-sm sm:text-base";
+            "mt-6 rounded-xl border border-matrixGreen bg-matrixGreen/10 px-4 py-3 text-sm sm:text-base";
           elements.feedbackBox.innerHTML =
             "✅ <strong>Você acertou!</strong> Questão já respondida.";
         } else {
           elements.feedbackBox.className =
-            "mt-6 rounded-xl border border-reggaeRed bg-reggaeRed/10 px-4 py-3 text-sm sm:text-base";
+            "mt-6 rounded-xl border border-red-500 bg-red-900/10 px-4 py-3 text-sm sm:text-base";
           elements.feedbackBox.innerHTML = `❌ <strong>Você errou.</strong> Questão já respondida. Resposta correta: <strong>${correctAlternative.letra}) ${correctAlternative.texto}</strong>`;
         }
 
@@ -367,8 +440,8 @@
           button.type = "button";
           button.dataset.letter = alt.letra;
           button.className =
-            "w-full rounded-xl border border-slate-700 bg-slate-900/60 p-4 text-left transition hover:border-reggaeGold hover:bg-reggaeGreen/20 focus:outline-none focus:ring-2 focus:ring-reggaeGold/60";
-          button.innerHTML = `<span class="mr-2 font-bold text-reggaeGold">${alt.letra})</span>${alt.texto}`;
+            "w-full rounded-xl border border-matrixGreen/30 bg-black/50 p-4 text-left transition hover:border-matrixGreen hover:bg-matrixGreen/10 focus:outline-none focus:ring-2 focus:ring-matrixGreen/60";
+          button.innerHTML = `<span class="mr-2 font-bold text-matrixGreen text-glow">${alt.letra})</span>${alt.texto}`;
           button.addEventListener("click", () => handleAnswer(alt, button));
           elements.answersContainer.appendChild(button);
         });
@@ -398,24 +471,24 @@
         if (selectedIsCorrect) {
           state.correct += 1;
           selectedButton.className =
-            "w-full rounded-xl border border-green-400 bg-green-500/20 p-4 text-left ring-2 ring-green-400/60";
+            "w-full rounded-xl border border-matrixGreen bg-matrixGreen/20 p-4 text-left ring-2 ring-matrixGreen/60";
           elements.feedbackBox.className =
-            "mt-6 rounded-xl border border-green-400 bg-green-500/10 px-4 py-3 text-sm sm:text-base";
+            "mt-6 rounded-xl border border-matrixGreen bg-matrixGreen/10 px-4 py-3 text-sm sm:text-base";
           elements.feedbackBox.innerHTML = "✅ <strong>Você acertou!</strong>";
         } else {
           selectedButton.className =
-            "w-full rounded-xl border border-reggaeRed bg-reggaeRed/20 p-4 text-left ring-2 ring-reggaeRed/60";
+            "w-full rounded-xl border border-red-500 bg-red-900/30 p-4 text-left ring-2 ring-red-500/60";
 
           Array.from(elements.answersContainer.children).forEach((button) => {
             const letter = button.dataset.letter;
             if (correctAlternative && letter === correctAlternative.letra) {
               button.className =
-                "w-full rounded-xl border border-green-400 bg-green-500/20 p-4 text-left ring-2 ring-green-400/60";
+                "w-full rounded-xl border border-matrixGreen bg-matrixGreen/20 p-4 text-left ring-2 ring-matrixGreen/60";
             }
           });
 
           elements.feedbackBox.className =
-            "mt-6 rounded-xl border border-reggaeRed bg-reggaeRed/10 px-4 py-3 text-sm sm:text-base";
+            "mt-6 rounded-xl border border-red-500 bg-red-900/10 px-4 py-3 text-sm sm:text-base";
           elements.feedbackBox.innerHTML = `❌ <strong>Você errou.</strong> Resposta correta: <strong>${correctAlternative.letra}) ${correctAlternative.texto}</strong>`;
         }
 
